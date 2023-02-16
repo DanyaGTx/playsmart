@@ -1,0 +1,129 @@
+@charset "UTF-8";
+.accordions {
+  margin-top: 50px;
+  padding-bottom: 120px;
+}
+
+.accordion-wrapper {
+  padding: 10px;
+}
+
+.accordion-item-btn {
+  color: #444;
+  cursor: pointer;
+  outline: none;
+  padding: 18px;
+  width: 100%;
+  text-align: right;
+  font-size: 20px;
+  transition: 0.4s;
+  background-color: white;
+  border-top: 1px solid gray;
+}
+
+.accordion-item:nth-last-child(-n+1) {
+  border-bottom: 1px solid gray;
+}
+
+.accordion-item-btn::before {
+  content: "+";
+  float: left;
+  margin-left: 5px;
+  border: 1px solid gray;
+  border-radius: 50%;
+  padding: 1px 6px;
+  color: gray;
+  line-height: 22px;
+}
+
+.active::before {
+  content: "−";
+}
+
+.accordion-item-panel {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-out;
+  max-width: 1300px;
+  margin-left: auto;
+  text-align: right;
+}
+.accordion-item-panel__text {
+  padding-bottom: 20px;
+  line-height: 20px;
+}
+
+.results-wrapper {
+  background: url("../../../img/winner-in-realtime/main_background.png");
+  min-height: 315px;
+}
+
+.results {
+  position: relative;
+}
+.results-info {
+  text-align: right;
+  padding: 80px 0px;
+}
+.results__title {
+  font-size: 40px;
+  color: #333;
+  font-weight: 600;
+}
+.results__description {
+  margin-top: 50px;
+  font-size: 1.65rem;
+  color: #333;
+}
+.results-realtime {
+  margin-top: 40px;
+}
+.results-realtime__link {
+  font-size: 17px;
+  color: #626262;
+  text-decoration: underline;
+}
+.results-news {
+  font-size: 16px;
+  font-weight: 700;
+  text-align: right;
+  margin-top: 55px;
+  padding-right: 10px;
+}
+.results-news__link {
+  color: blue;
+}
+
+@media (max-width: 1480px) {
+  .results-info {
+    padding-right: 10px;
+  }
+}
+@media (max-width: 1000px) {
+  .results-news {
+    transform: translateY(100px);
+  }
+  .results-wrapper {
+    background-position-x: 20%;
+  }
+}
+@media (max-width: 675px) {
+  .results-info {
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 450px;
+    width: 100%;
+  }
+  .results__title {
+    font-size: 30px;
+  }
+  .results__description {
+    font-size: 20px;
+  }
+  .results-wrapper {
+    background-position-x: 30%;
+  }
+}
