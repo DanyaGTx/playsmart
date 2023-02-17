@@ -107,8 +107,6 @@
   .results-wrapper {
     background-position-x: 20%;
   }
-}
-@media (max-width: 675px) {
   .results-info {
     position: absolute;
     text-align: center;
