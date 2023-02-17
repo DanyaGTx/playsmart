@@ -92,12 +92,14 @@ h6 {
   height: 100%;
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.4);
-  transition: background-color 2s ease-in-out;
+  transition: background 0.3s ease-in-out;
   padding: 10px;
+  opacity: 0;
 }
 
 .modal.show {
   visibility: visible;
+  opacity: 1;
   transform: translateY(0%);
 }
 
@@ -1522,7 +1524,7 @@ h6 {
   appearance: none;
   -moz-appearance: none;
   -webkit-appearance: none;
-  background-image: url("../../img/join-us/select-ico.png");
+  background-image: url("../img/join-us/select-ico.png");
   background-repeat: no-repeat;
   background-size: 10px;
   background-position: calc(100% - 70px) center;

@@ -9,6 +9,7 @@ const passTab = document.querySelector(".modal-content-tab-inner-tabs__btn-pass"
 
 const codeTabContent = document.querySelector(".modal-content-tab-inner-tab-content-code")
 const passTabContent = document.querySelector(".modal-content-tab-inner-tab-content-pass")
+
 function openModal(tab) {
   console.log(tab);
   modal.classList.add("show");
