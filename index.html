@@ -24,6 +24,7 @@
     <script defer src="js/modal-window.js"></script>
     <script defer src="js/header-menu/header-dropdown-results-tabs.js"></script>
     <script defer src="js/header-menu/header-dropdown-draws-tabs.js"></script>
+    <script defer src="js/video-popup.js"></script>
     <title>Winners In Realtime Page</title>
   </head>
   <body class="body-wrapper">
@@ -414,6 +415,30 @@
             <span class="bar"></span>
           </label>
           <div class="header-navigation-items">
+            <div
+              class="header-navigation-buttons header-navigation-buttons-mobile"
+            >
+              <div class="header-navigation-item">
+                <button
+                  id="open-signup-modal"
+                  data-target-tab="signup"
+                  onclick="openModalForm('signup')"
+                  class="header-navigation-item__button-join"
+                >
+                  להצטרפות אלינו
+                </button>
+              </div>
+              <div
+                id="open-signin-modal"
+                data-target-tab="signin"
+                onclick="openModalForm('signin')"
+                class="header__nvagation-item"
+              >
+                <a href="#" class="header-navigation-item__button-customers"
+                  >לקוחקיים</a
+                >
+              </div>
+            </div>
             <div class="header-navigation-item">
               <a
                 class="header-navigation-item__link"
@@ -424,14 +449,9 @@
                 <div class="header-navigation-item-dropdown-content">
                   <div class="container">
                     <div class="header-navigation-item-dropdown-content-list">
-                      <!-- <img
-                        class="header-navigation-item-dropdown-content-list__close"
-                        src="./img/header/close-modbile-menu-icon.svg"
-                        alt="X"
-                      /> -->
                       <img
                         class="header-navigation-item-dropdown-content-list__close"
-                        src="./img/header/close-modbile-menu-icon.svg"
+                        src="./img/header/nested-icon.png"
                         alt="X"
                       />
                       <div class="header-dropdown-content-list-wrapper">
@@ -477,7 +497,7 @@
                     <div class="header-navigation-item-dropdown-content-list">
                       <img
                         class="header-navigation-item-dropdown-content-list__close"
-                        src="./img/header/close-modbile-menu-icon.svg"
+                        src="./img/header/nested-icon.png"
                         alt="X"
                       />
                       >
@@ -721,7 +741,7 @@
                     <div class="header-navigation-item-dropdown-content-list">
                       <img
                         class="header-navigation-item-dropdown-content-list__close"
-                        src="./img/header/close-modbile-menu-icon.svg"
+                        src="./img/header/nested-icon.png"
                         alt="X"
                       />
                       >
@@ -797,7 +817,7 @@
                     <div class="header-navigation-item-dropdown-content-list">
                       <img
                         class="header-navigation-item-dropdown-content-list__close"
-                        src="./img/header/close-modbile-menu-icon.svg"
+                        src="./img/header/nested-icon.png"
                         alt="X"
                       />
                       >
@@ -910,7 +930,7 @@
                     <div class="header-navigation-item-dropdown-content-list">
                       <img
                         class="header-navigation-item-dropdown-content-list__close"
-                        src="./img/header/close-modbile-menu-icon.svg"
+                        src="./img/header/nested-icon.png"
                         alt="X"
                       />
                       >
@@ -1028,7 +1048,7 @@
                     <div class="header-navigation-item-dropdown-content-list">
                       <img
                         class="header-navigation-item-dropdown-content-list__close"
-                        src="./img/header/close-modbile-menu-icon.svg"
+                        src="./img/header/nested-icon.png"
                         alt="X"
                       />
                       >
@@ -1411,7 +1431,7 @@
                     <div class="header-navigation-item-dropdown-content-list">
                       <img
                         class="header-navigation-item-dropdown-content-list__close"
-                        src="./img/header/close-modbile-menu-icon.svg"
+                        src="./img/header/nested-icon.png"
                         alt="X"
                       />
                       >
@@ -2957,6 +2977,10 @@
       <p class="winners__section-description">
         הכירו את המשתתפים שהרוויחו מהטכנולוגיה של Smart
       </p>
+
+      <div class="video-popup">
+        <iframe class="video-player" src="" frameborder="0"></iframe>
+      </div>
       <div class="swiper winners-slider">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
@@ -2986,9 +3010,9 @@
                 >
                   <div class="winners-card-play-btn winners-card-play-btn-pink">
                     <img
-                      class="winners-card-play-btn__icon-video"
+                      class="winners-card-play-btn__icon-video video-btn"
                       width="25"
-                      class="winners-card-video__icon"
+                      data-video-url="https://www.youtube.com/embed/qIYNEocOpt8?autoplay=1"
                       src="./img/winners-slider/play-video-ico.png"
                       alt=""
                     />

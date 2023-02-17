@@ -2,6 +2,8 @@ const closeMenuBtns = document.querySelectorAll(".header-navigation-item-dropdow
 const popUpMenus = document.querySelectorAll(".header-navigation-item-dropdown");
 const links = document.querySelectorAll(".header-navigation-item__link");
 const closeMobileMenuBurger = document.querySelector('.burger__toggler')
+const showMobileMenuButtons = document.querySelector('.header-navigation-buttons-mobile')
+const menuButtons = document.querySelector('.header-navigation-buttons')
 if (window.matchMedia("(max-width: 840px)").matches) {
     for (let i = 0; i < links.length; i++) {
         links[i].addEventListener("click", function (event) {
@@ -39,5 +41,12 @@ if (window.matchMedia("(max-width: 840px)").matches) {
         }
     })
    
+}
+
+
+if (window.matchMedia("(max-width: 550px)").matches) { 
+    showMobileMenuButtons.addEventListener('click', () => {
+        menuButtons.classList.toggle('show-mobile-buttons')
+    })
 }
 

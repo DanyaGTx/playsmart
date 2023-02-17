@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Urbanist&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700&display=swap");
 * {
@@ -566,8 +565,8 @@ h6 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
   padding: 0px 20px;
+  flex-wrap: wrap;
 }
 .header-navigation-menu {
   display: flex;
@@ -641,13 +640,14 @@ h6 {
 }
 .header-navigation-item-dropdown-content-list__close {
   position: absolute;
-  top: 10px;
+  top: 7px;
   left: 0;
   z-index: 2;
   margin-left: 15px;
   font-size: 30px;
-  width: 20px;
-  height: 20px;
+  width: 25px;
+  height: 25px;
+  transform: rotate(-180deg);
   cursor: pointer;
   display: none;
 }
@@ -979,9 +979,9 @@ h6 {
 
 .header-dropdown-content-list-wrapper-columns-deal-lottery-tabs {
   width: 200px;
-  top: -40px;
+  top: -25%;
   left: 100%;
-  height: 445px;
+  height: 470px;
   background-color: #f6fafd;
   position: absolute;
   margin: 0px auto;
@@ -993,6 +993,10 @@ h6 {
 }
 .header-dropdown-content-list-wrapper-columns-deal-lottery-tab-content__link {
   color: #55a3ce;
+}
+
+.header-navigation-buttons-mobile {
+  display: none !important;
 }
 
 /*---------------------------*/
@@ -1038,14 +1042,14 @@ h6 {
   }
 }
 @media (max-width: 850px) {
-  .header-navigation-buttons {
-    margin-bottom: 20px;
-  }
   .header-navigation-logo-link__img {
     margin-top: 10px;
   }
 }
 @media (max-width: 840px) {
+  .header {
+    padding: 0;
+  }
   .header-dropdown-content-list-wrapper-columns__text {
     margin-top: 10px !important;
   }
@@ -1112,9 +1116,6 @@ h6 {
     padding: 10px;
     opacity: 0.9;
   }
-  .header-navigation-buttons {
-    margin-right: 20px;
-  }
   .header-navigation-item-dropdown-content-list {
     padding-top: 0;
   }
@@ -1128,9 +1129,6 @@ h6 {
   }
   .header-burger-toggle {
     display: grid !important;
-  }
-  .header-navigation-buttons {
-    margin-top: 20px;
   }
   .header-navigation-item-dropdown-content-list__close {
     display: block;
@@ -1240,12 +1238,22 @@ h6 {
   }
   .header-navigation-item__link {
     position: relative;
+    padding-right: 20px;
   }
-  .header-navigation-item__link::before {
-    content: "→";
+  .header-navigation-item__link::after {
+    content: "";
+    background: url("../img/header/nested-icon.png") no-repeat;
+    background-position: top right;
+    background-position-y: 13px;
+    background-size: 15px;
     position: absolute;
-    top: 25px;
-    right: 10px;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    right: 0;
+  }
+  .header-navigation-buttons {
+    display: flex;
   }
 }
 @media (min-width: 840px) {
@@ -1257,11 +1265,17 @@ h6 {
   .header-dropdown-content-list-wrapper-columns-winners-images {
     display: block;
   }
+  .header-navigation-buttons {
+    display: none !important;
+  }
+  .header-navigation-buttons-mobile {
+    display: flex !important;
+  }
+  .header-navigation-item__button-join {
+    background-color: black;
+  }
 }
 @media (max-width: 500px) {
-  .header-navigation {
-    justify-content: flex-start;
-  }
   .header-dropdown-content-list-wrapper-columns-info__btn {
     font-size: 12px;
   }
@@ -1272,7 +1286,7 @@ h6 {
 }
 @media (max-width: 350px) {
   .header-navigation-item__button-join {
-    font-size: 14px;
+    font-size: 12px;
   }
 }
 .about {
@@ -1327,6 +1341,35 @@ h6 {
   .about-card__description {
     font-size: 17px;
     padding: 15px;
+  }
+}
+.video-popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.video-player {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 10px;
+  width: 100%;
+  max-width: 1000px;
+  height: 600px;
+}
+
+@media (max-width: 700px) {
+  .video-player {
+    max-width: 1000px;
+    height: 400px;
   }
 }
 .winner-slider-wrapper {
