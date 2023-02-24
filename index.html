@@ -21,6 +21,7 @@
     <script defer src="js/winners-slider.js"></script>
     <script defer src="js/mobile-menu.js"></script>
     <script defer src="js/accordions.js"></script>
+    <script defer src="js/footer-mobile-accordions.js"></script>
     <script defer src="js/modal-window.js"></script>
     <script defer src="js/header-menu/header-dropdown-results-tabs.js"></script>
     <script defer src="js/header-menu/header-dropdown-draws-tabs.js"></script>
@@ -386,7 +387,7 @@
     <div class="header">
       <div class="header-navigation">
         <div class="header-navigation-buttons">
-          <div class="header-navigation-item">
+          <div>
             <button
               id="open-signup-modal"
               data-target-tab="signup"
@@ -408,52 +409,18 @@
           </div>
         </div>
         <div class="header-navigation-menu">
-          <input class="burger__toggler" type="checkbox" id="toggle" />
-          <label class="header-burger-toggle" for="toggle">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-          </label>
           <div class="header-navigation-items">
-            <div
-              class="header-navigation-buttons header-navigation-buttons-mobile"
-            >
-              <div class="header-navigation-item">
-                <button
-                  id="open-signup-modal"
-                  data-target-tab="signup"
-                  onclick="openModalForm('signup')"
-                  class="header-navigation-item__button-join"
-                >
-                  להצטרפות אלינו
-                </button>
-              </div>
-              <div
-                id="open-signin-modal"
-                data-target-tab="signin"
-                onclick="openModalForm('signin')"
-                class="header__nvagation-item"
-              >
-                <a href="#" class="header-navigation-item__button-customers"
-                  >לקוחקיים</a
-                >
-              </div>
-            </div>
             <div class="header-navigation-item">
               <a
                 class="header-navigation-item__link"
                 href="https://www.playsmart.co.il/%D7%94%D7%9E%D7%92%D7%96%D7%99%D7%9F-%D7%A9%D7%9C-%D7%A1%D7%9E%D7%90%D7%A8%D7%98/"
-                >המגזין</a
               >
+                המגזין
+              </a>
               <div class="header-navigation-item-dropdown">
                 <div class="header-navigation-item-dropdown-content">
                   <div class="container">
                     <div class="header-navigation-item-dropdown-content-list">
-                      <img
-                        class="header-navigation-item-dropdown-content-list__close"
-                        src="./img/header/nested-icon.png"
-                        alt="X"
-                      />
                       <div class="header-dropdown-content-list-wrapper">
                         <h4 class="header-dropdown-content-list-wrapper__title">
                           תוצאות לוטו
@@ -489,24 +456,19 @@
               <a
                 class="header-navigation-item__link"
                 href="https://www.playsmart.co.il/%D7%95%D7%95%D7%99%D7%A0%D7%A8/%D7%94%D7%9E%D7%9C%D7%A6%D7%95%D7%AA-%D7%95%D7%95%D7%99%D7%A0%D7%A8/#"
-                >לוח תוצאות</a
               >
+                לוח תוצאות
+              </a>
               <div class="header-navigation-item-dropdown">
                 <div class="header-navigation-item-dropdown-content">
                   <div class="container">
                     <div class="header-navigation-item-dropdown-content-list">
-                      <img
-                        class="header-navigation-item-dropdown-content-list__close"
-                        src="./img/header/nested-icon.png"
-                        alt="X"
-                      />
-                      >
                       <div class="header-dropdown-content-list-wrapper">
                         <h4 class="header-dropdown-content-list-wrapper__title">
                           תוצאות לוטו
                         </h4>
                         <div
-                          class="header-dropdown-content-list-wrapper-columns"
+                          class="header-dropdown-content-list-wrapper-columns header-dropdown-content-list-wrapper-columns-results"
                         >
                           <div
                             class="header-dropdown-content-list-wrapper-columns-info"
@@ -665,7 +627,7 @@
                               לוח תוצאות
                             </h3>
                             <div
-                              class="header-dropdown-content-list-wrapper-columns-info-item"
+                              class="header-dropdown-content-list-wrapper-columns-info-item-result"
                             >
                               <a
                                 class="header-dropdown-content-list-wrapper-info-columns-item__link dropdown__link"
@@ -674,7 +636,7 @@
                               </a>
                             </div>
                             <div
-                              class="header-dropdown-content-list-wrapper-columns-info-item"
+                              class="header-dropdown-content-list-wrapper-columns-info-item-result"
                             >
                               <a
                                 class="header-dropdown-content-list-wrapper-info-columns-item__link dropdown__link"
@@ -684,7 +646,7 @@
                               </a>
                             </div>
                             <div
-                              class="header-dropdown-content-list-wrapper-columns-info-item"
+                              class="header-dropdown-content-list-wrapper-columns-info-item-result"
                             >
                               <a
                                 class="header-dropdown-content-list-wrapper-info-columns-item__link dropdown__link"
@@ -694,7 +656,7 @@
                               </a>
                             </div>
                             <div
-                              class="header-dropdown-content-list-wrapper-columns-info-item"
+                              class="header-dropdown-content-list-wrapper-columns-info-item-result"
                             >
                               <a
                                 class="header-dropdown-content-list-wrapper-info-columns-item__link dropdown__link"
@@ -704,7 +666,7 @@
                               </a>
                             </div>
                             <div
-                              class="header-dropdown-content-list-wrapper-columns-info-item"
+                              class="header-dropdown-content-list-wrapper-columns-info-item-result"
                             >
                               <a
                                 class="header-dropdown-content-list-wrapper-info-columns-item__link dropdown__link"
@@ -713,7 +675,7 @@
                               </a>
                             </div>
                             <div
-                              class="header-dropdown-content-list-wrapper-columns-info-item"
+                              class="header-dropdown-content-list-wrapper-columns-info-item-result"
                             >
                               <a
                                 class="header-dropdown-content-list-wrapper-info-columns-item__link dropdown__link"
@@ -732,19 +694,14 @@
             <div class="header-navigation-item">
               <a
                 class="header-navigation-item__link"
-                href="https://www.playsmart.co.il/%D7%95%D7%95%D7%99%D7%A0%D7%A8/%D7%94%D7%9E%D7%9C%D7%A6%D7%95%D7%AA-%D7%95%D7%95%D7%99%D7%A0%D7%A8/"
-                >המלצות</a
+                href="https://www.playsmart.co.il/"
               >
+                המלצות
+              </a>
               <div class="header-navigation-item-dropdown">
                 <div class="header-navigation-item-dropdown-content">
                   <div class="container">
                     <div class="header-navigation-item-dropdown-content-list">
-                      <img
-                        class="header-navigation-item-dropdown-content-list__close"
-                        src="./img/header/nested-icon.png"
-                        alt="X"
-                      />
-                      >
                       <div class="header-dropdown-content-wrapper">
                         <h4 class="header-dropdown-content-list-wrapper__title">
                           תוצאות לוטו
@@ -772,22 +729,48 @@
                             class="header-dropdown-content-list-wrapper-columns-info"
                           >
                             <h3
-                              class="header-dropdown-content-list-wrapper-columns__title"
+                              class="header-dropdown-content-list-wrapper-columns-title"
                             >
-                              ההמלצה החמה של היום:
+                              <b>ההמלצה החמה של היום:</b>
+                              כדורגל
+                            </h3>
+
+                            <h4
+                              class="header-dropdown-content-list-wrapper-columns__subtitle"
+                            >
+                              ליגה:ליגה לאומית
+                            </h4>
+                            <h3
+                              class="header-dropdown-content-list-wrapper-columns__title-team"
+                            >
+                              בני יהודה תא - מכבי פתח תקוה
+                            </h3>
+                            <h5
+                              class="header-dropdown-content-list-wrapper-columns__title-reccomendations"
+                            >
+                              המלצה שלנו:
+                            </h5>
+                            <h3
+                              class="header-dropdown-content-list-wrapper-columns__title-team"
+                            >
+                              תיקו סימון 2
                             </h3>
                             <p
-                              class="header-dropdown-content-list-wrapper-columns__text"
+                              class="header-dropdown-content-list-wrapper-columns-time"
                             >
-                              ליגה:גביע איטלקי
+                              <b>שידור ישיר: </b> <br />
+                              <b>תחילת משחק: </b>
+                              24.02 15:00
                             </p>
                           </div>
                           <div
                             class="header-dropdown-content-list-wrapper-columns-info"
                           >
-                            <h3
-                              class="header-dropdown-content-list-wrapper-columns-info__title"
-                            ></h3>
+                            <h4
+                              class="header-dropdown-content-list-wrapper-info-columns-item__title"
+                            >
+                              המלצות ווינר
+                            </h4>
                             <div
                               class="header-dropdown-content-list-wrapper-columns-info-item"
                             >
@@ -808,19 +791,13 @@
             <div class="header-navigation-item">
               <a
                 class="header-navigation-item__link"
-                href="https://www.playsmart.co.il/games-home/"
+                href="https://www.playsmart.co.il/%D7%96%D7%95%D7%9B%D7%99%D7%9D/"
                 >SMART GAMEZ</a
               >
               <div class="header-navigation-item-dropdown">
                 <div class="header-navigation-item-dropdown-content">
                   <div class="container">
                     <div class="header-navigation-item-dropdown-content-list">
-                      <img
-                        class="header-navigation-item-dropdown-content-list__close"
-                        src="./img/header/nested-icon.png"
-                        alt="X"
-                      />
-                      >
                       <div class="header-dropdown-content-wrapper">
                         <h4 class="header-dropdown-content-list-wrapper__title">
                           תוצאות לוטו
@@ -870,7 +847,7 @@
                             <h3
                               class="header-dropdown-content-list-wrapper-columns-info__title"
                             >
-                              לוח תוצאות
+                              SMART GAMEZ
                             </h3>
                             <div
                               class="header-dropdown-content-list-wrapper-columns-info-item"
@@ -921,19 +898,14 @@
             <div class="header-navigation-item">
               <a
                 class="header-navigation-item__link"
-                href="https://www.playsmart.co.il/%D7%96%D7%95%D7%9B%D7%99%D7%9D/"
-                >זכיות</a
+                href="https://www.playsmart.co.il/games-home/"
               >
+                זכיות
+              </a>
               <div class="header-navigation-item-dropdown">
                 <div class="header-navigation-item-dropdown-content">
                   <div class="container">
                     <div class="header-navigation-item-dropdown-content-list">
-                      <img
-                        class="header-navigation-item-dropdown-content-list__close"
-                        src="./img/header/nested-icon.png"
-                        alt="X"
-                      />
-                      >
                       <div class="header-dropdown-content-wrapper">
                         <h4 class="header-dropdown-content-list-wrapper__title">
                           זכיות
@@ -1039,19 +1011,14 @@
             <div class="header-navigation-item">
               <a
                 class="header-navigation-item__link"
-                href="https://www.playsmart.co.il/mydeals/"
-                >לשלוח טופס חכם</a
+                href="https://www.playsmart.co.il/%D7%95%D7%95%D7%99%D7%A0%D7%A8/%D7%94%D7%9E%D7%9C%D7%A6%D7%95%D7%AA-%D7%95%D7%95%D7%99%D7%A0%D7%A8/"
+              >
+                לשלוח טופס חכם</a
               >
               <div class="header-navigation-item-dropdown">
                 <div class="header-navigation-item-dropdown-content">
                   <div class="container">
                     <div class="header-navigation-item-dropdown-content-list">
-                      <img
-                        class="header-navigation-item-dropdown-content-list__close"
-                        src="./img/header/nested-icon.png"
-                        alt="X"
-                      />
-                      >
                       <div class="header-dropdown-content-wrapper">
                         <h4 class="header-dropdown-content-list-wrapper__title">
                           זכיות
@@ -1098,7 +1065,7 @@
                                   השבוע בלוטו:
                                   <span
                                     class="header-dropdown-content-list-wrapper-columns-deal-lottery-info-title__price"
-                                    >7,000,000</span
+                                    >22,000,000</span
                                   >
                                   ש”ח
                                 </h4>
@@ -1252,7 +1219,7 @@
                                   השבוע בלוטו:
                                   <span
                                     class="header-dropdown-content-list-wrapper-columns-deal-lottery-info-title__price"
-                                    >7,000,000</span
+                                    >5,000,000</span
                                   >
                                   ש”ח
                                 </h4>
@@ -1329,7 +1296,7 @@
                                   השבוע בלוטו:
                                   <span
                                     class="header-dropdown-content-list-wrapper-columns-deal-lottery-info-title__price"
-                                    >7,000,000</span
+                                    >3,000,000</span
                                   >
                                   ש”ח
                                 </h4>
@@ -1418,23 +1385,17 @@
                 </div>
               </div>
             </div>
-
             <div class="header-navigation-item">
               <a
                 class="header-navigation-item__link"
-                href="https://www.playsmart.co.il/"
-                >לשחק חכם</a
+                href="https://www.playsmart.co.il/mydeals/"
               >
+                לשחק חכם
+              </a>
               <div class="header-navigation-item-dropdown">
                 <div class="header-navigation-item-dropdown-content">
                   <div class="container">
                     <div class="header-navigation-item-dropdown-content-list">
-                      <img
-                        class="header-navigation-item-dropdown-content-list__close"
-                        src="./img/header/nested-icon.png"
-                        alt="X"
-                      />
-                      >
                       <div
                         class="header-dropdown-content-wrapper header-dropdown-content-wrapper-subscription"
                       >
@@ -1473,6 +1434,11 @@
                           <div
                             class="header-dropdown-content-list-wrapper-columns-description"
                           >
+                            <h4
+                              class="header-dropdown-content-list-wrapper-columns-description__title"
+                            >
+                              נעים להכיר, אנחנו סמארט
+                            </h4>
                             <p
                               class="header-dropdown-content-list-wrapper-columns__text header-dropdown-content-list-wrapper-columns-smartGames-section__text"
                             >
@@ -1519,15 +1485,1249 @@
               </div>
             </div>
           </div>
-          <div class="header-navigation-logo">
-            <a class="header-navigation-logo-link" href="#">
-              <img
-                class="header-navigation-logo-link__img"
-                src="./img/logos/logo.png"
-                alt="logo"
-              />
-            </a>
+          <div class="header-navigation-dropdowns">
+            <div class="header-navigation-item-dropdown-mobile">
+              <div class="header-navigation-item-dropdown-content">
+                <div class="container">
+                  <div
+                    class="header-dropdown-content-list-wrapper-links header-dropdown-content-list-wrapper-links"
+                  >
+                    <div class="header-dropdown-content-list-wrapper-info-item">
+                      <a
+                        class="header-dropdown-content-list-wrapper-info-item__link"
+                        href="#"
+                        >המגזין</a
+                      >
+                    </div>
+                    <div class="header-dropdown-content-list-wrapper-info-item">
+                      <a
+                        class="header-dropdown-content-list-wrapper-info-item__link"
+                        href="#"
+                      >
+                        חדשות
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="header-navigation-item-dropdown-mobile">
+              <div class="header-navigation-item-dropdown-content">
+                <div class="container">
+                  <div class="header-dropdown-content-list-wrapper-links">
+                    <div
+                      class="header-dropdown-content-list-wrapper-info-item-result"
+                    >
+                      <a
+                        class="header-dropdown-content-list-wrapper-info-item__link"
+                        href="#"
+                        >תוצאות לוטו</a
+                      >
+                    </div>
+                    <div
+                      class="header-dropdown-content-list-wrapper-info-item-result"
+                    >
+                      <a
+                        class="header-dropdown-content-list-wrapper-info-item__link"
+                        href="#"
+                      >
+                        תוצאות לוטו
+                      </a>
+                    </div>
+                    <div
+                      class="header-dropdown-content-list-wrapper-info-item-result"
+                    >
+                      <a
+                        class="header-dropdown-content-list-wrapper-info-item__link"
+                        href="#"
+                      >
+                        תוצאות ווינר עולמי
+                      </a>
+                    </div>
+                    <div
+                      class="header-dropdown-content-list-wrapper-info-item-result"
+                    >
+                      <a
+                        class="header-dropdown-content-list-wrapper-info-item__link"
+                        href="#"
+                      >
+                        תוצאות טוטו (ווינר 16)
+                      </a>
+                    </div>
+                    <div
+                      class="header-dropdown-content-list-wrapper-info-item-result"
+                    >
+                      <a
+                        class="header-dropdown-content-list-wrapper-info-item__link"
+                        href="#"
+                      >
+                        תוצאות ווינר עולמי
+                      </a>
+                    </div>
+                    <div
+                      class="header-dropdown-content-list-wrapper-info-item-result"
+                    >
+                      <a
+                        class="header-dropdown-content-list-wrapper-info-item__link"
+                        href="#"
+                      >
+                        תוצאות מיליונר
+                      </a>
+                    </div>
+                  </div>
+                  <div class="header-navigation-item-dropdown-content-list">
+                    <div class="header-dropdown-content-list-wrapper">
+                      <div
+                        class="header-navigation-item-dropdown-content-list__close-wrapper"
+                      >
+                        <img
+                          class="header-navigation-item-dropdown-content-list__close"
+                          width="25"
+                          src="./img/header/header-drropwdown/close-nested-manu-icon.svg"
+                          alt="X"
+                        />
+                      </div>
+                      <div class="header-dropdown-content-list-wrapper-columns">
+                        <div
+                          class="header-dropdown-content-list-wrapper-columns-info-wrapper-mobile"
+                        >
+                          <h4
+                            class="header-dropdown-content-list-wrapper-columns-info__title"
+                          >
+                            תוצאות מיליונר
+                          </h4>
+                          <p
+                            class="header-dropdown-content-list-wrapper-columns-info__text"
+                          >
+                            המספרים הזוכים בהגרלה 3550 מתאריך 28/01/2023
+                          </p>
+                          <img
+                            class="header-dropdown-content-list-wrapper-columns-info__img"
+                            src="./img/header/dropdown-item-img.png"
+                            alt=""
+                          />
+                          <div
+                            class="header-dropdown-content-list-wrapper-columns-info__btn"
+                          >
+                            כל תוצאות הלוטו
+                          </div>
+                        </div>
+                        <div
+                          class="header-dropdown-content-list-wrapper-columns-info-wrapper-mobile"
+                        >
+                          <h4
+                            class="header-dropdown-content-list-wrapper-columns-info__title"
+                          >
+                            תוצאות מיליונר Content2
+                          </h4>
+                          <p
+                            class="header-dropdown-content-list-wrapper-columns-info__text"
+                          >
+                            המספרים הזוכים בהגרלה 3550 מתאריך 28/01/2023
+                          </p>
+                          <img
+                            class="header-dropdown-content-list-wrapper-columns-info__img"
+                            src="./img/header/dropdown-item-img.png"
+                            alt=""
+                          />
+                          <div
+                            class="header-dropdown-content-list-wrapper-columns-info__btn"
+                          >
+                            כל תוצאות הלוטו
+                          </div>
+                        </div>
+                        <div
+                          class="header-dropdown-content-list-wrapper-columns-info-wrapper-mobile"
+                        >
+                          <h4
+                            class="header-dropdown-content-list-wrapper-columns-info__title"
+                          >
+                            תוצאות מיליונר Content 3
+                          </h4>
+                          <p
+                            class="header-dropdown-content-list-wrapper-columns-info__text"
+                          >
+                            המספרים הזוכים בהגרלה 3550 מתאריך 28/01/2023
+                          </p>
+                          <img
+                            class="header-dropdown-content-list-wrapper-columns-info__img"
+                            src="./img/header/dropdown-item-img.png"
+                            alt=""
+                          />
+                          <div
+                            class="header-dropdown-content-list-wrapper-columns-info__btn"
+                          >
+                            כל תוצאות הלוטו
+                          </div>
+                        </div>
+                        <div
+                          class="header-dropdown-content-list-wrapper-columns-info-wrapper-mobile"
+                        >
+                          <h4
+                            class="header-dropdown-content-list-wrapper-columns-info__title"
+                          >
+                            תוצאות מיליונר Content 4
+                          </h4>
+                          <p
+                            class="header-dropdown-content-list-wrapper-columns-info__text"
+                          >
+                            המספרים הזוכים בהגרלה 3550 מתאריך 28/01/2023
+                          </p>
+                          <img
+                            class="header-dropdown-content-list-wrapper-columns-info__img"
+                            src="./img/header/dropdown-item-img.png"
+                            alt=""
+                          />
+                          <div
+                            class="header-dropdown-content-list-wrapper-columns-info__btn"
+                          >
+                            כל תוצאות הלוטו
+                          </div>
+                        </div>
+                        <div
+                          class="header-dropdown-content-list-wrapper-columns-info-wrapper-mobile"
+                        >
+                          <h4
+                            class="header-dropdown-content-list-wrapper-columns-info__title"
+                          >
+                            תוצאות מיליונר Content 5
+                          </h4>
+                          <p
+                            class="header-dropdown-content-list-wrapper-columns-info__text"
+                          >
+                            המספרים הזוכים בהגרלה 3550 מתאריך 28/01/2023
+                          </p>
+                          <img
+                            class="header-dropdown-content-list-wrapper-columns-info__img"
+                            src="./img/header/dropdown-item-img.png"
+                            alt=""
+                          />
+                          <div
+                            class="header-dropdown-content-list-wrapper-columns-info__btn"
+                          >
+                            כל תוצאות הלוטו
+                          </div>
+                        </div>
+                        <div
+                          class="header-dropdown-content-list-wrapper-columns-info-wrapper-mobile"
+                        >
+                          <h4
+                            class="header-dropdown-content-list-wrapper-columns-info__title"
+                          >
+                            תוצאות מיליונר Content 6
+                          </h4>
+                          <p
+                            class="header-dropdown-content-list-wrapper-columns-info__text"
+                          >
+                            המספרים הזוכים בהגרלה 3550 מתאריך 28/01/2023
+                          </p>
+                          <img
+                            class="header-dropdown-content-list-wrapper-columns-info__img"
+                            src="./img/header/dropdown-item-img.png"
+                            alt=""
+                          />
+                          <div
+                            class="header-dropdown-content-list-wrapper-columns-info__btn"
+                          >
+                            כל תוצאות הלוטו
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="header-navigation-item-dropdown-mobile">
+              <div class="header-navigation-item-dropdown-content">
+                <div class="container">
+                  <div class="header-dropdown-content-list-wrapper-links">
+                    <div class="header-dropdown-content-list-wrapper-info-item">
+                      <a
+                        class="header-dropdown-content-list-wrapper-info-item__link"
+                        href="#"
+                      >
+                        המלצות ווינר
+                      </a>
+                    </div>
+                    <div class="header-dropdown-content-list-wrapper-info-item">
+                      <a
+                        class="header-dropdown-content-list-wrapper-info-item__link"
+                        href="https://www.playsmart.co.il/%D7%95%D7%95%D7%99%D7%A0%D7%A8/%D7%94%D7%9E%D7%9C%D7%A6%D7%95%D7%AA-%D7%95%D7%95%D7%99%D7%A0%D7%A8/"
+                      >
+                        המלצות ווינר נוספות
+                      </a>
+                    </div>
+                  </div>
+                  <div class="header-navigation-item-dropdown-content-list">
+                    <div class="header-dropdown-content-wrapper">
+                      <div
+                        class="header-dropdown-content-list-wrapper-columns header-dropdown-content-list-wrapper-columns-timer-section"
+                      >
+                        <div
+                          class="header-dropdown-content-list-wrapper-columns-timer"
+                        >
+                          <div
+                            class="header-dropdown-content-list-wrapper-columns-timer-wrapper"
+                          >
+                            <div
+                              class="header-navigation-item-dropdown-content-list__close-wrapper"
+                            >
+                              <img
+                                class="header-navigation-item-dropdown-content-list__close"
+                                width="25"
+                                src="./img/header/header-drropwdown/close-nested-manu-icon.svg"
+                                alt="X"
+                              />
+                            </div>
+                            <div
+                              class="header-dropdown-content-list-wrapper-columns-timer-info"
+                            >
+                              <h4
+                                class="header-dropdown-content-list-wrapper-columns-timer-info-title"
+                              >
+                                כדורגל
+                                <b>ההמלצה החמה של היום:</b>
+                              </h4>
+                              <div
+                                class="header-dropdown-content-list-wrapper-columns-timer-info-subtitle"
+                              >
+                                <a
+                                  class="header-dropdown-content-list-wrapper-columns-timer-info-subtitle-link"
+                                  href=""
+                                >
+                                  ראשונה
+                                  <b>הליגה: איטלקית </b>
+                                </a>
+                              </div>
+                              <h3
+                                class="header-dropdown-content-list-wrapper-columns-timer-info-title-team"
+                              >
+                                מנצסטר יונייטד - ברצלונה
+                              </h3>
+                              <h5
+                                class="header-dropdown-content-list-wrapper-columns-timer-info-title-reccomendations"
+                              >
+                                המלצה שלנו:
+                              </h5>
+                              <h3
+                                class="header-dropdown-content-list-wrapper-columns-timer-info-title-team"
+                              >
+                                מנצסטר יונייטד סימון 1
+                              </h3>
+                              <div
+                                class="header-dropdown-content-list-wrapper-columns-timer-info-text"
+                              >
+                                23.02 22:00
+                                <b>תחילת משחק: </b>
+                                שידור ישיר בערוץ: ספורט 4
+                                <b>שידור ישיר: </b>
+                              </div>
+                            </div>
+                            <img
+                              class="header-dropdown-content-list-wrapper-columns-timer__img"
+                              src="./img/header/header-drropwdown/timer.png"
+                              alt=""
+                            />
+                            <a href="#">
+                              <img
+                                class="header-dropdown-content-list-wrapper-columns-timer__img"
+                                src="./img/header/header-drropwdown/winner.png"
+                                alt=""
+                              />
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="header-navigation-item-dropdown-mobile">
+              <div class="header-navigation-item-dropdown-content">
+                <div class="container">
+                  <div
+                    class="header-dropdown-content-list-wrapper-links header-dropdown-content-list-wrapper-links"
+                  >
+                    <div
+                      class="header-dropdown-content-list-wrapper-info-item header-navigation-item-active"
+                    >
+                      <a
+                        class="header-dropdown-content-list-wrapper-info-item__link"
+                        href="#"
+                      >
+                        SMART GAMEZ</a
+                      >
+                    </div>
+                    <div class="header-dropdown-content-list-wrapper-info-item">
+                      <a
+                        class="header-dropdown-content-list-wrapper-info-item__link"
+                        href="https://www.playsmart.co.il/games-home/"
+                      >
+                        משחקים ראשי
+                      </a>
+                    </div>
+                    <div class="header-dropdown-content-list-wrapper-info-item">
+                      <a
+                        class="header-dropdown-content-list-wrapper-info-item__link"
+                        href="https://www.playsmart.co.il/games-packages/"
+                      >
+                        רכישת קרדיטים
+                      </a>
+                    </div>
+                    <div class="header-dropdown-content-list-wrapper-info-item">
+                      <a
+                        class="header-dropdown-content-list-wrapper-info-item__link"
+                        href="https://www.playsmart.co.il/games-game/"
+                      >
+                        טורניר נוכחי
+                      </a>
+                    </div>
+                    <div class="header-dropdown-content-list-wrapper-info-item">
+                      <a
+                        class="header-dropdown-content-list-wrapper-info-item__link"
+                        href="https://www.playsmart.co.il/games-game/"
+                      >
+                        טורנירים שהסתיימו
+                      </a>
+                    </div>
+                  </div>
+                  <div class="header-navigation-item-dropdown-content-list">
+                    <div class="header-dropdown-content-wrapper">
+                      <div
+                        class="header-dropdown-content-list-wrapper-columns header-dropdown-content-list-wrapper-columns-smartGames-section"
+                      >
+                        <div
+                          class="header-navigation-item-dropdown-content-list__close-wrapper"
+                        >
+                          <img
+                            class="header-navigation-item-dropdown-content-list__close"
+                            width="25"
+                            src="./img/header/header-drropwdown/close-nested-manu-icon.svg"
+                            alt="X"
+                          />
+                        </div>
+
+                        <div
+                          class="header-dropdown-content-list-wrapper-columns-info"
+                        >
+                          <p
+                            class="header-dropdown-content-list-wrapper-columns__text header-dropdown-content-list-wrapper-columns-smartGames-section__text"
+                          >
+                            מצטרפים לטורניר משחקים יומי ומשחקים כמה שרוצים
+                            במשחקים פשוטים ומגניבים שחקן עם התוצאה היומית הטובה
+                            ביותר זוכה בפרס היומי והשחקן עם התוצאה השבועית
+                            הגבוהה ביותר זוכה בפרס שהצטבר כל השבוע
+                          </p>
+                          <div
+                            class="header-dropdown-content-list-wrapper-columns-link-wrapper"
+                          >
+                            <a
+                              class="header-dropdown-content-list-wrapper-columns__link"
+                              href="#"
+                            >
+                              ברור, אני רוצה לשחק ולהרוויח
+                            </a>
+                          </div>
+                        </div>
+                        <div
+                          class="header-dropdown-content-list-wrapper-columns-image"
+                        >
+                          <img
+                            class="header-dropdown-content-wrapper-image__img header-dropdown-content-list-wrapper-columns-smartGames-section__img"
+                            src="./img/header/header-drropwdown/smart-img.jpg"
+                            alt=""
+                          />
+                          <div
+                            class="header-dropdown-content-list-wrapper-columns-image__button-wrapper"
+                          >
+                            <button
+                              class="header-dropdown-content-list-wrapper-columns-image__button"
+                            >
+                              התחל לשחק
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="header-navigation-item-dropdown-mobile">
+              <div class="header-navigation-item-dropdown-content">
+                <div class="container">
+                  <div
+                    class="header-dropdown-content-list-wrapper-links header-dropdown-content-list-wrapper-links"
+                  >
+                    <div
+                      class="header-dropdown-content-list-wrapper-info-item header-navigation-item-active"
+                    >
+                      <a
+                        class="header-dropdown-content-list-wrapper-info-item__link"
+                        href="#"
+                        >זכיות</a
+                      >
+                    </div>
+                    <div class="header-dropdown-content-list-wrapper-info-item">
+                      <a
+                        class="header-dropdown-content-list-wrapper-info-item__link"
+                        href="#"
+                      >
+                        הגרלות SMART
+                      </a>
+                    </div>
+                  </div>
+                  <div class="header-navigation-item-dropdown-content-list">
+                    <div class="header-dropdown-content-wrapper">
+                      <div
+                        class="header-dropdown-content-list-wrapper-columns header-dropdown-content-list-wrapper-columns-smartGames-section"
+                      >
+                        <div
+                          class="header-navigation-item-dropdown-content-list__close-wrapper"
+                        >
+                          <img
+                            class="header-navigation-item-dropdown-content-list__close"
+                            width="25"
+                            src="./img/header/header-drropwdown/close-nested-manu-icon.svg"
+                            alt="X"
+                          />
+                        </div>
+                        <div
+                          class="header-dropdown-content-list-wrapper-columns-winners"
+                        >
+                          <div
+                            class="header-dropdown-content-list-wrapper-columns-winners-images"
+                          >
+                            <div
+                              class="header-dropdown-content-list-wrapper-columns-winners-cards"
+                            >
+                              <div
+                                class="header-dropdown-content-list-wrapper-columns-winners-images-info"
+                              >
+                                <img
+                                  class="header-dropdown-content-list-wrapper-columns-winners-images-info__img"
+                                  src="./img/header/header-drropwdown/avatar-1.png"
+                                  alt=""
+                                />
+                                <h5
+                                  class="header-dropdown-content-list-wrapper-columns-winners-images-info__name"
+                                >
+                                  לינא ממגאר
+                                </h5>
+                                <p
+                                  class="header-dropdown-content-list-wrapper-columns-winners-images-info__price"
+                                >
+                                  64,991ש”ח
+                                </p>
+                              </div>
+                              <div
+                                class="header-dropdown-content-list-wrapper-columns-winners-images-info"
+                              >
+                                <img
+                                  class="header-dropdown-content-list-wrapper-columns-winners-images-info__img"
+                                  src="./img/header/header-drropwdown/avatar-2.png"
+                                  alt=""
+                                />
+                                <h5
+                                  class="header-dropdown-content-list-wrapper-columns-winners-images-info__name"
+                                >
+                                  לינא ממגאר
+                                </h5>
+                                <p
+                                  class="header-dropdown-content-list-wrapper-columns-winners-images-info__price"
+                                >
+                                  64,991ש”ח
+                                </p>
+                              </div>
+                              <div
+                                class="header-dropdown-content-list-wrapper-columns-winners-images-info"
+                              >
+                                <img
+                                  class="header-dropdown-content-list-wrapper-columns-winners-images-info__img"
+                                  src="./img/header/header-drropwdown/avatar-3.png"
+                                  alt=""
+                                />
+                                <h5
+                                  class="header-dropdown-content-list-wrapper-columns-winners-images-info__name"
+                                >
+                                  לינא ממגאר
+                                </h5>
+                                <p
+                                  class="header-dropdown-content-list-wrapper-columns-winners-images-info__price"
+                                >
+                                  64,991ש”ח
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            class="header-dropdown-content-list-wrapper-columns-winners__btn content__button"
+                          >
+                            כל תוצאות הלוטו
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="header-navigation-item-dropdown-mobile">
+              <div class="header-navigation-item-dropdown-content">
+                <div class="container">
+                  <div
+                    class="header-dropdown-content-list-wrapper-links header-dropdown-content-list-wrapper-links"
+                  >
+                    <div
+                      class="header-dropdown-content-list-wrapper-info-item header-navigation-item-active header-navigation-item-dropdown-items-content-columns-deal-mobile"
+                    >
+                      <a
+                        class="header-dropdown-content-list-wrapper-info-item__link"
+                        href="#"
+                        >המגזין</a
+                      >
+                    </div>
+                    <div
+                      class="header-dropdown-content-list-wrapper-info-item header-navigation-item-dropdown-items-content-columns-deal-mobile"
+                    >
+                      <a
+                        class="header-dropdown-content-list-wrapper-info-item__link"
+                        href="#"
+                      >
+                        חדשות
+                      </a>
+                    </div>
+                    <div
+                      class="header-dropdown-content-list-wrapper-info-item header-navigation-item-dropdown-items-content-columns-deal-mobile"
+                    >
+                      <a
+                        class="header-dropdown-content-list-wrapper-info-item__link"
+                        href="#"
+                      >
+                        חדשות
+                      </a>
+                    </div>
+                    <div
+                      class="header-dropdown-content-list-wrapper-info-item header-navigation-item-dropdown-items-content-columns-deal-mobile"
+                    >
+                      <a
+                        class="header-dropdown-content-list-wrapper-info-item__link"
+                        href="#"
+                      >
+                        חדשות
+                      </a>
+                    </div>
+                  </div>
+                  <div class="header-navigation-item-dropdown-content-list">
+                    <div class="header-dropdown-content-wrapper">
+                      <div
+                        class="header-dropdown-content-list-wrapper-columns header-dropdown-content-list-wrapper-columns-deal-section header-navigation-columns-deal-section"
+                      >
+                        <div
+                          class="header-navigation-item-dropdown-content-list__close-wrapper"
+                        >
+                          <img
+                            class="header-navigation-item-dropdown-content-list__close"
+                            width="25"
+                            src="./img/header/header-drropwdown/close-nested-manu-icon.svg"
+                            alt="X"
+                          />
+                        </div>
+                        <div
+                          class="header-navigation-item-dropdown-items-content-columns-deal"
+                        >
+                          <div
+                            class="header-dropdown-content-list-wrapper-columns-deal-lottery"
+                          >
+                            <div
+                              class="header-dropdown-content-list-wrapper-columns-deal-lottery-info"
+                            >
+                              <h4
+                                class="header-dropdown-content-list-wrapper-columns-deal-lottery-info-title"
+                              >
+                                השבוע בלוטו:
+                                <span
+                                  class="header-dropdown-content-list-wrapper-columns-deal-lottery-info-title__price"
+                                  >7,000,000</span
+                                >
+                                ש”ח
+                              </h4>
+                              <p
+                                class="header-dropdown-content-list-wrapper-columns-deal-lottery-info__text"
+                              >
+                                את הלוטו אין ממש צורך להציג. זהו המשחק המוכר
+                                בעולם ואחד הפופולריים בעולם אז לשלוח לכם את
+                                הטפסים?
+                              </p>
+                              <p
+                                class="header-dropdown-content-list-wrapper-columns-deal-lottery__text lottery__timer"
+                              >
+                                נסגר בעוד 01 ימים 11 שעות 29 דקות 57 ניות
+                              </p>
+                            </div>
+
+                            <div
+                              class="header-dropdown-content-list-wrapper-columns-deal-winners__btn content__button"
+                            >
+                              כל תוצאות הלוטו
+                            </div>
+                          </div>
+                          <div
+                            class="header-dropdown-content-list-wrapper-columns-deal-games"
+                          >
+                            <h4
+                              class="header-dropdown-content-list-wrapper-columns-deal-games__title"
+                            >
+                              דיל טוב
+                            </h4>
+                            <p
+                              class="header-dropdown-content-list-wrapper-columns-deal-games__text"
+                            >
+                              משחקים והגרלות משתלמות במיוחד
+                            </p>
+                            <img
+                              class="header-dropdown-content-list-wrapper-columns-deal-games__img"
+                              src="./img/header/header-drropwdown/volume-new.png"
+                              alt=""
+                            />
+                            <div
+                              class="header-dropdown-content-list-wrapper-columns-deal-winners__btn content__button"
+                            >
+                              כל תוצאות הלוטו
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="header-navigation-item-dropdown-items-content-columns-deal"
+                        >
+                          <div
+                            class="header-dropdown-content-list-wrapper-columns-deal-games"
+                          >
+                            <h4
+                              class="header-dropdown-content-list-wrapper-columns-deal-games__title"
+                            >
+                              דיל טוב
+                            </h4>
+                            <p
+                              class="header-dropdown-content-list-wrapper-columns-deal-games__text"
+                            >
+                              משחקים והגרלות משתלמות במיוחד
+                            </p>
+                            <img
+                              class="header-dropdown-content-list-wrapper-columns-deal-games__img"
+                              src="./img/header/header-drropwdown/volume-new.png"
+                              alt=""
+                            />
+                            <div
+                              class="header-dropdown-content-list-wrapper-columns-deal-winners__btn content__button"
+                            >
+                              כל תוצאות הלוטו
+                            </div>
+                          </div>
+                          <div
+                            class="header-dropdown-content-list-wrapper-columns-deal-lottery"
+                          >
+                            <div
+                              class="header-dropdown-content-list-wrapper-columns-deal-lottery-info"
+                            >
+                              <h4
+                                class="header-dropdown-content-list-wrapper-columns-deal-lottery-info-title"
+                              >
+                                השבוע בלוטו:
+                                <span
+                                  class="header-dropdown-content-list-wrapper-columns-deal-lottery-info-title__price"
+                                  >7,000,000</span
+                                >
+                                ש”ח
+                              </h4>
+                              <p
+                                class="header-dropdown-content-list-wrapper-columns-deal-lottery-info__text"
+                              >
+                                את הלוטו אין ממש צורך להציג. זהו המשחק המוכר
+                                בעולם ואחד הפופולריים בעולם אז לשלוח לכם את
+                                הטפסים?
+                              </p>
+                              <p
+                                class="header-dropdown-content-list-wrapper-columns-deal-lottery__text lottery__timer"
+                              >
+                                נסגר בעוד 01 ימים 11 שעות 29 דקות 57 ניות
+                              </p>
+                            </div>
+
+                            <div
+                              class="header-dropdown-content-list-wrapper-columns-deal-winners__btn content__button"
+                            >
+                              כל תוצאות הלוטו
+                            </div>
+                          </div>
+                          <div
+                            class="header-dropdown-content-list-wrapper-columns-deal-lottery-tabs"
+                          >
+                            <div
+                              class="header-dropdown-content-list-wrapper-columns-deal-lottery-tab-content"
+                            >
+                              <a
+                                class="header-dropdown-content-list-wrapper-columns-deal-lottery-tab-content__link"
+                                href="#"
+                                >לוטו איך זה עובד? 2</a
+                              >
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="header-navigation-item-dropdown-items-content-columns-deal"
+                        >
+                          <div
+                            class="header-dropdown-content-list-wrapper-columns-deal-games"
+                          >
+                            <h4
+                              class="header-dropdown-content-list-wrapper-columns-deal-games__title"
+                            >
+                              דיל טוב
+                            </h4>
+                            <p
+                              class="header-dropdown-content-list-wrapper-columns-deal-games__text"
+                            >
+                              משחקים והגרלות משתלמות במיוחד
+                            </p>
+                            <img
+                              class="header-dropdown-content-list-wrapper-columns-deal-games__img"
+                              src="./img/header/header-drropwdown/volume-new.png"
+                              alt=""
+                            />
+                            <div
+                              class="header-dropdown-content-list-wrapper-columns-deal-winners__btn content__button"
+                            >
+                              כל תוצאות הלוטו
+                            </div>
+                          </div>
+                          <div
+                            class="header-dropdown-content-list-wrapper-columns-deal-lottery"
+                          >
+                            <div
+                              class="header-dropdown-content-list-wrapper-columns-deal-lottery-info"
+                            >
+                              <h4
+                                class="header-dropdown-content-list-wrapper-columns-deal-lottery-info-title"
+                              >
+                                השבוע בלוטו:
+                                <span
+                                  class="header-dropdown-content-list-wrapper-columns-deal-lottery-info-title__price"
+                                  >7,000,000</span
+                                >
+                                ש”ח
+                              </h4>
+                              <p
+                                class="header-dropdown-content-list-wrapper-columns-deal-lottery-info__text"
+                              >
+                                את הלוטו אין ממש צורך להציג. זהו המשחק המוכר
+                                בעולם ואחד הפופולריים בעולם אז לשלוח לכם את
+                                הטפסים?
+                              </p>
+                              <p
+                                class="header-dropdown-content-list-wrapper-columns-deal-lottery__text lottery__timer"
+                              >
+                                נסגר בעוד 01 ימים 11 שעות 29 דקות 57 ניות
+                              </p>
+                            </div>
+
+                            <div
+                              class="header-dropdown-content-list-wrapper-columns-deal-winners__btn content__button"
+                            >
+                              כל תוצאות הלוטו
+                            </div>
+                          </div>
+                          <div
+                            class="header-dropdown-content-list-wrapper-columns-deal-lottery-tabs"
+                          >
+                            <div
+                              class="header-dropdown-content-list-wrapper-columns-deal-lottery-tab-content"
+                            >
+                              <a
+                                class="header-dropdown-content-list-wrapper-columns-deal-lottery-tab-content__link"
+                                href="#"
+                                >לוטו איך זה עובד? 3</a
+                              >
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="header-navigation-item-dropdown-items-content-columns-deal"
+                        >
+                          <div
+                            class="header-dropdown-content-list-wrapper-columns-deal-games"
+                          >
+                            <h4
+                              class="header-dropdown-content-list-wrapper-columns-deal-games__title"
+                            >
+                              דיל טוב
+                            </h4>
+                            <p
+                              class="header-dropdown-content-list-wrapper-columns-deal-games__text"
+                            >
+                              משחקים והגרלות משתלמות במיוחד
+                            </p>
+                            <img
+                              class="header-dropdown-content-list-wrapper-columns-deal-games__img"
+                              src="./img/header/header-drropwdown/volume-new.png"
+                              alt=""
+                            />
+                            <div
+                              class="header-dropdown-content-list-wrapper-columns-deal-winners__btn content__button"
+                            >
+                              כל תוצאות הלוטו
+                            </div>
+                          </div>
+                          <div
+                            class="header-dropdown-content-list-wrapper-columns-deal-lottery"
+                          >
+                            <div
+                              class="header-dropdown-content-list-wrapper-columns-deal-lottery-info"
+                            >
+                              <h4
+                                class="header-dropdown-content-list-wrapper-columns-deal-lottery-info-title"
+                              >
+                                השבוע בלוטו:
+                                <span
+                                  class="header-dropdown-content-list-wrapper-columns-deal-lottery-info-title__price"
+                                  >7,000,000</span
+                                >
+                                ש”ח
+                              </h4>
+                              <p
+                                class="header-dropdown-content-list-wrapper-columns-deal-lottery-info__text"
+                              >
+                                את הלוטו אין ממש צורך להציג. זהו המשחק המוכר
+                                בעולם ואחד הפופולריים בעולם אז לשלוח לכם את
+                                הטפסים?
+                              </p>
+                              <p
+                                class="header-dropdown-content-list-wrapper-columns-deal-lottery__text lottery__timer"
+                              >
+                                נסגר בעוד 01 ימים 11 שעות 29 דקות 57 ניות
+                              </p>
+                            </div>
+
+                            <div
+                              class="header-dropdown-content-list-wrapper-columns-deal-winners__btn content__button"
+                            >
+                              כל תוצאות הלוטו
+                            </div>
+                          </div>
+                          <div
+                            class="header-dropdown-content-list-wrapper-columns-deal-lottery-tabs"
+                          >
+                            <div
+                              class="header-dropdown-content-list-wrapper-columns-deal-lottery-tab-content"
+                            >
+                              <a
+                                class="header-dropdown-content-list-wrapper-columns-deal-lottery-tab-content__link"
+                                href="#"
+                                >לוטו איך זה עובד?4</a
+                              >
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="header-navigation-item-dropdown-items-content-columns-deal"
+                        >
+                          <div
+                            class="header-dropdown-content-list-wrapper-columns-deal-games"
+                          >
+                            <h4
+                              class="header-dropdown-content-list-wrapper-columns-deal-games__title"
+                            >
+                              דיל טוב
+                            </h4>
+                            <p
+                              class="header-dropdown-content-list-wrapper-columns-deal-games__text"
+                            >
+                              משחקים והגרלות משתלמות במיוחד
+                            </p>
+                            <img
+                              class="header-dropdown-content-list-wrapper-columns-deal-games__img"
+                              src="./img/header/header-drropwdown/volume-new.png"
+                              alt=""
+                            />
+                            <div
+                              class="header-dropdown-content-list-wrapper-columns-deal-winners__btn content__button"
+                            >
+                              כל תוצאות הלוטו
+                            </div>
+                          </div>
+                          <div
+                            class="header-dropdown-content-list-wrapper-columns-deal-lottery"
+                          >
+                            <div
+                              class="header-dropdown-content-list-wrapper-columns-deal-lottery-info"
+                            >
+                              <h4
+                                class="header-dropdown-content-list-wrapper-columns-deal-lottery-info-title"
+                              >
+                                השבוע בלוטו:
+                                <span
+                                  class="header-dropdown-content-list-wrapper-columns-deal-lottery-info-title__price"
+                                  >7,000,000</span
+                                >
+                                ש”ח
+                              </h4>
+                              <p
+                                class="header-dropdown-content-list-wrapper-columns-deal-lottery-info__text"
+                              >
+                                את הלוטו אין ממש צורך להציג. זהו המשחק המוכר
+                                בעולם ואחד הפופולריים בעולם אז לשלוח לכם את
+                                הטפסים?
+                              </p>
+                              <p
+                                class="header-dropdown-content-list-wrapper-columns-deal-lottery__text lottery__timer"
+                              >
+                                נסגר בעוד 01 ימים 11 שעות 29 דקות 57 ניות
+                              </p>
+                            </div>
+
+                            <div
+                              class="header-dropdown-content-list-wrapper-columns-deal-winners__btn content__button"
+                            >
+                              כל תוצאות הלוטו
+                            </div>
+                          </div>
+                          <div
+                            class="header-dropdown-content-list-wrapper-columns-deal-lottery-tabs"
+                          >
+                            <div
+                              class="header-dropdown-content-list-wrapper-columns-deal-lottery-tab-content"
+                            >
+                              <a
+                                class="header-dropdown-content-list-wrapper-columns-deal-lottery-tab-content__link"
+                                href="#"
+                                >לוטו איך זה עובד?4</a
+                              >
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="header-navigation-item-dropdown-items-content-columns-deal"
+                        >
+                          <div
+                            class="header-dropdown-content-list-wrapper-columns-deal-games"
+                          >
+                            <h4
+                              class="header-dropdown-content-list-wrapper-columns-deal-games__title"
+                            >
+                              דיל טוב
+                            </h4>
+                            <p
+                              class="header-dropdown-content-list-wrapper-columns-deal-games__text"
+                            >
+                              משחקים והגרלות משתלמות במיוחד
+                            </p>
+                            <img
+                              class="header-dropdown-content-list-wrapper-columns-deal-games__img"
+                              src="./img/header/header-drropwdown/volume-new.png"
+                              alt=""
+                            />
+                            <div
+                              class="header-dropdown-content-list-wrapper-columns-deal-winners__btn content__button"
+                            >
+                              כל תוצאות הלוטו
+                            </div>
+                          </div>
+                          <div
+                            class="header-dropdown-content-list-wrapper-columns-deal-lottery"
+                          >
+                            <div
+                              class="header-dropdown-content-list-wrapper-columns-deal-lottery-info"
+                            >
+                              <h4
+                                class="header-dropdown-content-list-wrapper-columns-deal-lottery-info-title"
+                              >
+                                השבוע בלוטו:
+                                <span
+                                  class="header-dropdown-content-list-wrapper-columns-deal-lottery-info-title__price"
+                                  >7,000,000</span
+                                >
+                                ש”ח
+                              </h4>
+                              <p
+                                class="header-dropdown-content-list-wrapper-columns-deal-lottery-info__text"
+                              >
+                                את הלוטו אין ממש צורך להציג. זהו המשחק המוכר
+                                בעולם ואחד הפופולריים בעולם אז לשלוח לכם את
+                                הטפסים?
+                              </p>
+                              <p
+                                class="header-dropdown-content-list-wrapper-columns-deal-lottery__text lottery__timer"
+                              >
+                                נסגר בעוד 01 ימים 11 שעות 29 דקות 57 ניות
+                              </p>
+                            </div>
+
+                            <div
+                              class="header-dropdown-content-list-wrapper-columns-deal-winners__btn content__button"
+                            >
+                              כל תוצאות הלוטו
+                            </div>
+                          </div>
+                          <div
+                            class="header-dropdown-content-list-wrapper-columns-deal-lottery-tabs"
+                          >
+                            <div
+                              class="header-dropdown-content-list-wrapper-columns-deal-lottery-tab-content"
+                            >
+                              <a
+                                class="header-dropdown-content-list-wrapper-columns-deal-lottery-tab-content__link"
+                                href="#"
+                                >לוטו איך זה עובד? 3</a
+                              >
+                            </div>
+                          </div>
+                        </div>
+
+                        <div
+                          class="header-dropdown-content-list-wrapper-columns-info header-dropdown-content-list-wrapper-columns-smartGames-section-info"
+                        >
+                          <div
+                            class="header-navigation-item-dropdown-items-content-columns-deal-item"
+                          >
+                            <a
+                              class="header-dropdown-content-list-wrapper-info-columns-item__link dropdown__link header-navigation-item-dropdown-deal-item-active"
+                              href="https://www.playsmart.co.il/לוטו/הגרלת-777/"
+                            >
+                              לוטו איך זה עובד?
+                            </a>
+                          </div>
+                          <div
+                            class="header-navigation-item-dropdown-items-content-columns-deal-item"
+                          >
+                            <a
+                              class="header-dropdown-content-list-wrapper-info-columns-item__link dropdown__link"
+                              href="https://www.playsmart.co.il/לוטו/הגרלת-777/"
+                            >
+                              הגרלת 777
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="header-navigation-item-dropdown-mobile">
+              <div class="header-navigation-item-dropdown-content">
+                <div class="container">
+                  <div class="header-navigation-item-dropdown-content-list">
+                    <div
+                      class="header-dropdown-content-list-wrapper-links header-dropdown-content-list-wrapper-links"
+                    >
+                      <div
+                        class="header-dropdown-content-list-wrapper-info-item header-navigation-item-active"
+                      >
+                        <a
+                          class="header-dropdown-content-list-wrapper-info-item__link"
+                          href="#"
+                          >המגזין</a
+                        >
+                      </div>
+                      <div
+                        class="header-dropdown-content-list-wrapper-info-item"
+                      >
+                        <a
+                          class="header-dropdown-content-list-wrapper-info-item__link"
+                          href="#"
+                        >
+                          חדשות
+                        </a>
+                      </div>
+                    </div>
+                    <div
+                      class="header-dropdown-content-wrapper header-dropdown-content-wrapper-subscription"
+                    >
+                      <div
+                        class="header-dropdown-content-list-wrapper-columns header-navigation-item-subscription"
+                      >
+                        <div
+                          class="header-navigation-item-dropdown-content-list__close-wrapper"
+                        >
+                          <img
+                            class="header-navigation-item-dropdown-content-list__close"
+                            width="25"
+                            src="./img/header/header-drropwdown/close-nested-manu-icon.svg"
+                            alt="X"
+                          />
+                        </div>
+
+                        <div
+                          class="header-dropdown-content-list-wrapper-columns-description"
+                        >
+                          <h4
+                            class="header-dropdown-content-list-wrapper-columns-description__title"
+                          >
+                            נעים להכיר, אנחנו סמארט
+                          </h4>
+                          <p
+                            class="header-dropdown-content-list-wrapper-columns__text header-dropdown-content-list-wrapper-columns-smartGames-section__text"
+                          >
+                            מצטרפים לטורניר משחקים יומי ומשחקים כמה שרוצים
+                            במשחקים פשוטים ומגניבים שחקן עם התוצאה היומית הטובה
+                            ביותר זוכה בפרס היומי והשחקן עם התוצאה השבועית
+                            הגבוהה ביותר זוכה בפרס שהצטבר כל השבוע
+                          </p>
+                          <div
+                            class="header-dropdown-content-list-wrapper-columns-link-wrapper"
+                          >
+                            <a
+                              class="header-dropdown-content-list-wrapper-columns__link"
+                              href="#"
+                            >
+                              ברור, אני רוצה לשחק ולהרוויח >>
+                            </a>
+                          </div>
+                        </div>
+                        <div
+                          class="header-dropdown-content-wrapper-subscription-box"
+                        >
+                          <h4
+                            class="header-dropdown-content-wrapper-subscription-box__title"
+                          >
+                            מנוי חכם
+                          </h4>
+                          <p
+                            class="header-dropdown-content-wrapper-subscription-box__text"
+                          >
+                            רוצה להיות מנוי smart ? אתה לא היחיד שרוצה.הצטרף
+                            אלינו למועדון SMART ותתחיל ליהנות יותר מהטבות,
+                            הגרלות ופרסים.
+                          </p>
+                          <img
+                            class="header-dropdown-content-wrapper-subscription-box__img"
+                            src="./img/header/header-drropwdown/giftbox-img.png"
+                            alt=""
+                          />
+                          <div
+                            class="header-dropdown-content-list-wrapper-columns-winners__btn content__button"
+                          >
+                            כל תוצאות הלוטו
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
+        </div>
+        <div class="header-navigation-logo">
+          <a class="header-navigation-logo-link" href="#">
+            <img
+              class="header-navigation-logo-link__img"
+              src="./img/logos/logo.png"
+              alt="logo"
+            />
+          </a>
         </div>
       </div>
     </div>
@@ -1543,7 +2743,7 @@
     <div class="container">
       <div class="results">
         <div class="results-info">
-          <h2 class="results__title title">תוצאות ווינר בזמן אמת</h2>
+          <h1 class="results__title title">תוצאות ווינר בזמן אמת</h1>
           <p class="results__description">
             לוח תוצאות משחקי ווינר בזמן אמת במגוון פילוחים וצפייה נוחה
           </p>
@@ -1922,6 +3122,175 @@
                 >
                   3
                 </option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="winners-realtime-filters-mobile-columns">
+          <div class="winners-realtime-filters-mobile-column">
+            <div class="winners-realtime-filters-mobile-column-item">
+              <label
+                class="winners-realtime-filters-mobile-column-item__label"
+                for="programs-status-game"
+                >סטאטוס משחק:</label
+              >
+              <select
+                class="winners-realtime-filters-mobile-column-select"
+                name="programs-status-game"
+                id=""
+              >
+                <option value="0" selected="" disabled="" hidden="">
+                  בחר סטאטוס משחק
+                </option>
+                <option value="בוטל">בוטל</option>
+                <option value="הסתיים">הסתיים</option>
+                <option value="מחצית">מחצית</option>
+                <option value="משוחק">משוחק</option>
+                <option value="סגור">סגור</option>
+                <option value="רבע 4">רבע 4</option>
+              </select>
+            </div>
+            <div class="winners-realtime-filters-mobile-column-item">
+              <label
+                class="winners-realtime-filters-mobile-column-item__label"
+                for="programs-status-game"
+                >סטאטוס משחק:</label
+              >
+              <select
+                class="winners-realtime-filters-mobile-column-select"
+                name="programs-status-game"
+                id=""
+              >
+                <option value="0" selected="" disabled="" hidden="">
+                  בחר סטאטוס משחק
+                </option>
+                <option value="בוטל">בוטל</option>
+                <option value="הסתיים">הסתיים</option>
+                <option value="מחצית">מחצית</option>
+                <option value="משוחק">משוחק</option>
+                <option value="סגור">סגור</option>
+                <option value="רבע 4">רבע 4</option>
+              </select>
+            </div>
+            <div class="winners-realtime-filters-mobile-column-item">
+              <label
+                class="winners-realtime-filters-mobile-column-item__label"
+                for="programs-status-game"
+                >סטאטוס משחק:</label
+              >
+              <select
+                class="winners-realtime-filters-mobile-column-select"
+                name="programs-status-game"
+                id=""
+              >
+                <option value="0" selected="" disabled="" hidden="">
+                  בחר סטאטוס משחק
+                </option>
+                <option value="בוטל">בוטל</option>
+                <option value="הסתיים">הסתיים</option>
+                <option value="מחצית">מחצית</option>
+                <option value="משוחק">משוחק</option>
+                <option value="סגור">סגור</option>
+                <option value="רבע 4">רבע 4</option>
+              </select>
+            </div>
+            <div class="winners-realtime-filters-mobile-column-item">
+              <div class="winners-realtime-filters-mobile-column-item">
+                <label
+                  class="winners-realtime-filters-mobile-column-item__label"
+                  for="programs-status-game"
+                  >סטאטוס משחק:</label
+                >
+                <button
+                  name="restart-filter"
+                  class="winners-realtime-filters-mobile-column-item__restart-btn"
+                >
+                  אפס סינון
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="winners-realtime-filters-mobile-column">
+            <div class="winners-realtime-filters-mobile-column-item">
+              <label
+                class="winners-realtime-filters-mobile-column-item__label"
+                for="programs-status-game"
+                >סטאטוס משחק:</label
+              >
+              <input
+                class="winners-realtime-filters-mobile-column__datePicker"
+                type="date"
+                name="programs-date"
+                class="program-select"
+                id="programs-date"
+                min="2022-04-20"
+                max="2023-02-27"
+              />
+            </div>
+            <div class="winners-realtime-filters-mobile-column-item">
+              <label
+                class="winners-realtime-filters-mobile-column-item__label"
+                for="programs-status-game"
+                >סטאטוס משחק:</label
+              >
+              <select
+                class="winners-realtime-filters-mobile-column-select"
+                name="programs-status-game"
+                id=""
+              >
+                <option value="0" selected="" disabled="" hidden="">
+                  בחר סטאטוס משחק
+                </option>
+                <option value="בוטל">בוטל</option>
+                <option value="הסתיים">הסתיים</option>
+                <option value="מחצית">מחצית</option>
+                <option value="משוחק">משוחק</option>
+                <option value="סגור">סגור</option>
+                <option value="רבע 4">רבע 4</option>
+              </select>
+            </div>
+            <div class="winners-realtime-filters-mobile-column-item">
+              <label
+                class="winners-realtime-filters-mobile-column-item__label"
+                for="programs-status-game"
+                >סטאטוס משחק:</label
+              >
+              <select
+                class="winners-realtime-filters-mobile-column-select"
+                name="programs-status-game"
+                id=""
+              >
+                <option value="0" selected="" disabled="" hidden="">
+                  בחר סטאטוס משחק
+                </option>
+                <option value="בוטל">בוטל</option>
+                <option value="הסתיים">הסתיים</option>
+                <option value="מחצית">מחצית</option>
+                <option value="משוחק">משוחק</option>
+                <option value="סגור">סגור</option>
+                <option value="רבע 4">רבע 4</option>
+              </select>
+            </div>
+            <div class="winners-realtime-filters-mobile-column-item">
+              <label
+                class="winners-realtime-filters-mobile-column-item__label"
+                for="programs-status-game"
+                >סטאטוס משחק:</label
+              >
+              <select
+                class="winners-realtime-filters-mobile-column-select"
+                name="programs-status-game"
+                id=""
+              >
+                <option value="0" selected="" disabled="" hidden="">
+                  בחר סטאטוס משחק
+                </option>
+                <option value="בוטל">בוטל</option>
+                <option value="הסתיים">הסתיים</option>
+                <option value="מחצית">מחצית</option>
+                <option value="משוחק">משוחק</option>
+                <option value="סגור">סגור</option>
+                <option value="רבע 4">רבע 4</option>
               </select>
             </div>
           </div>
@@ -2783,6 +4152,449 @@
             </tbody>
           </table>
         </div>
+        <div class="winners-realtime-table-mobile-wrapper">
+          <table class="winners-realtime-mobile-table">
+            <thead class="winners-realtime-mobile-table-head">
+              <tr class="winners-realtime-mobile-table-head-row">
+                <td class="winners-realtime-mobile-table-head-row__cell">
+                  כדורגל - ברזיל - גביע ברזילאי
+                  <img src="./img/winner-in-realtime/flag.png" alt="" />
+                </td>
+              </tr>
+            </thead>
+            <tbody class="winners-realtime-mobile-table-body">
+              <tr class="winners-realtime-mobile-table-body-row">
+                <td class="winners-realtime-mobile-table-body-row-cell">
+                  <span
+                    class="winners-realtime-mobile-table-body-row-cell__number-green"
+                    >7.40</span
+                  >
+                </td>
+                <td class="winners-realtime-mobile-table-body-row-cell">S,D</td>
+                <td class="winners-realtime-mobile-table-body-row-cell">
+                  אתלטיקו פלטנסה - טוקומן
+                </td>
+                <td
+                  class="winners-realtime-mobile-table-body-row-cell winners-realtime-mobile-table-body-row-cell-star-wrapper"
+                >
+                  <span>345</span>
+                  <img
+                    class="winners-realtime-mobile-table-body-row-cell__star"
+                    src="./img/winner-in-realtime/star.png"
+                    width="18"
+                    alt="star"
+                  />
+                </td>
+                <td class="winners-realtime-mobile-table-body-row-cell">
+                  הסתיים
+                </td>
+                <td class="winners-realtime-mobile-table-body-row-cell">
+                  <span
+                    class="winners-realtime-mobile-table-body-row-cell__number"
+                    >2.55</span
+                  >
+                </td>
+                <td class="winners-realtime-mobile-table-body-row-cell">
+                  <span
+                    class="winners-realtime-mobile-table-body-row-cell__number"
+                    >2.55</span
+                  >
+                </td>
+                <td class="winners-realtime-mobile-table-body-row-cell">
+                  <span
+                    class="winners-realtime-mobile-table-body-row-cell__number"
+                    >2.55</span
+                  >
+                </td>
+              </tr>
+              <tr class="winners-realtime-mobile-table-body-row">
+                <td class="winners-realtime-mobile-table-body-row-cell">
+                  <span
+                    class="winners-realtime-mobile-table-body-row-cell__number-green"
+                    >7.40</span
+                  >
+                </td>
+                <td class="winners-realtime-mobile-table-body-row-cell">S,D</td>
+                <td class="winners-realtime-mobile-table-body-row-cell">
+                  אתלטיקו פלטנסה - טוקומן
+                </td>
+                <td
+                  style="white-space: nowrap"
+                  class="winners-realtime-mobile-table-body-row-cell winners-realtime-mobile-table-body-row-cell-star-wrapper"
+                >
+                  <span>345</span>
+                  <img
+                    class="winners-realtime-mobile-table-body-row-cell__star"
+                    src="./img/winner-in-realtime/star.png"
+                    width="18"
+                    alt="star"
+                  />
+                </td>
+                <td class="winners-realtime-mobile-table-body-row-cell">
+                  הסתיים
+                </td>
+                <td class="winners-realtime-mobile-table-body-row-cell">
+                  <span
+                    class="winners-realtime-mobile-table-body-row-cell__number"
+                    >2.55</span
+                  >
+                </td>
+                <td class="winners-realtime-mobile-table-body-row-cell">
+                  <span
+                    class="winners-realtime-mobile-table-body-row-cell__number"
+                    >2.55</span
+                  >
+                </td>
+                <td class="winners-realtime-mobile-table-body-row-cell">
+                  <span
+                    class="winners-realtime-mobile-table-body-row-cell__number"
+                    >2.55</span
+                  >
+                </td>
+              </tr>
+              <tr class="winners-realtime-mobile-table-body-row">
+                <td class="winners-realtime-mobile-table-body-row-cell">
+                  <span
+                    class="winners-realtime-mobile-table-body-row-cell__number-green"
+                    >7.40</span
+                  >
+                </td>
+                <td class="winners-realtime-mobile-table-body-row-cell">S,D</td>
+
+                <td class="winners-realtime-mobile-table-body-row-cell">
+                  אתלטיקו פלטנסה - טוקומן
+                </td>
+                <td
+                  class="winners-realtime-mobile-table-body-row-cell winners-realtime-mobile-table-body-row-cell-star-wrapper"
+                >
+                  <span>345</span>
+                  <img
+                    class="winners-realtime-mobile-table-body-row-cell__star"
+                    src="./img/winner-in-realtime/star.png"
+                    width="18"
+                    alt="star"
+                  />
+                </td>
+                <td class="winners-realtime-mobile-table-body-row-cell">
+                  הסתיים
+                </td>
+                <td class="winners-realtime-mobile-table-body-row-cell">
+                  <span
+                    class="winners-realtime-mobile-table-body-row-cell__number"
+                    >2.55</span
+                  >
+                </td>
+
+                <td class="winners-realtime-mobile-table-body-row-cell">
+                  <span
+                    class="winners-realtime-mobile-table-body-row-cell__number"
+                    >2.55</span
+                  >
+                </td>
+                <td class="winners-realtime-mobile-table-body-row-cell">
+                  <span
+                    class="winners-realtime-mobile-table-body-row-cell__number"
+                    >2.55</span
+                  >
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <table class="winners-realtime-mobile-table">
+            <thead class="winners-realtime-mobile-table-head">
+              <tr class="winners-realtime-mobile-table-head-row">
+                <td class="winners-realtime-mobile-table-head-row__cell">
+                  כדורגל - ברזיל - גביע ברזילאי
+                  <img src="./img/winner-in-realtime/flag.png" alt="" />
+                </td>
+              </tr>
+            </thead>
+            <tbody class="winners-realtime-mobile-table-body">
+              <tr class="winners-realtime-mobile-table-body-row">
+                <td class="winners-realtime-mobile-table-body-row-cell">
+                  <span
+                    class="winners-realtime-mobile-table-body-row-cell__number-green"
+                    >7.40</span
+                  >
+                </td>
+                <td class="winners-realtime-mobile-table-body-row-cell">S,D</td>
+                <td class="winners-realtime-mobile-table-body-row-cell">
+                  אתלטיקו פלטנסה - טוקומן
+                </td>
+                <td
+                  class="winners-realtime-mobile-table-body-row-cell winners-realtime-mobile-table-body-row-cell-star-wrapper"
+                >
+                  <span>345</span>
+                  <img
+                    class="winners-realtime-mobile-table-body-row-cell__star"
+                    src="./img/winner-in-realtime/star.png"
+                    width="18"
+                    alt="star"
+                  />
+                </td>
+                <td class="winners-realtime-mobile-table-body-row-cell">
+                  הסתיים
+                </td>
+                <td class="winners-realtime-mobile-table-body-row-cell">
+                  <span
+                    class="winners-realtime-mobile-table-body-row-cell__number"
+                    >2.55</span
+                  >
+                </td>
+                <td class="winners-realtime-mobile-table-body-row-cell">
+                  <span
+                    class="winners-realtime-mobile-table-body-row-cell__number"
+                    >2.55</span
+                  >
+                </td>
+                <td class="winners-realtime-mobile-table-body-row-cell">
+                  <span
+                    class="winners-realtime-mobile-table-body-row-cell__number"
+                    >2.55</span
+                  >
+                </td>
+              </tr>
+              <tr class="winners-realtime-mobile-table-body-row">
+                <td class="winners-realtime-mobile-table-body-row-cell">
+                  <span
+                    class="winners-realtime-mobile-table-body-row-cell__number-green"
+                    >7.40</span
+                  >
+                </td>
+                <td class="winners-realtime-mobile-table-body-row-cell">S,D</td>
+                <td class="winners-realtime-mobile-table-body-row-cell">
+                  אתלטיקו פלטנסה - טוקומן
+                </td>
+                <td
+                  style="white-space: nowrap"
+                  class="winners-realtime-mobile-table-body-row-cell winners-realtime-mobile-table-body-row-cell-star-wrapper"
+                >
+                  <span>345</span>
+                  <img
+                    class="winners-realtime-mobile-table-body-row-cell__star"
+                    src="./img/winner-in-realtime/star.png"
+                    width="18"
+                    alt="star"
+                  />
+                </td>
+                <td class="winners-realtime-mobile-table-body-row-cell">
+                  הסתיים
+                </td>
+                <td class="winners-realtime-mobile-table-body-row-cell">
+                  <span
+                    class="winners-realtime-mobile-table-body-row-cell__number"
+                    >2.55</span
+                  >
+                </td>
+                <td class="winners-realtime-mobile-table-body-row-cell">
+                  <span
+                    class="winners-realtime-mobile-table-body-row-cell__number"
+                    >2.55</span
+                  >
+                </td>
+                <td class="winners-realtime-mobile-table-body-row-cell">
+                  <span
+                    class="winners-realtime-mobile-table-body-row-cell__number"
+                    >2.55</span
+                  >
+                </td>
+              </tr>
+              <tr class="winners-realtime-mobile-table-body-row">
+                <td class="winners-realtime-mobile-table-body-row-cell">
+                  <span
+                    class="winners-realtime-mobile-table-body-row-cell__number-green"
+                    >7.40</span
+                  >
+                </td>
+                <td class="winners-realtime-mobile-table-body-row-cell">S,D</td>
+
+                <td class="winners-realtime-mobile-table-body-row-cell">
+                  אתלטיקו פלטנסה - טוקומן
+                </td>
+                <td
+                  class="winners-realtime-mobile-table-body-row-cell winners-realtime-mobile-table-body-row-cell-star-wrapper"
+                >
+                  <span>345</span>
+                  <img
+                    class="winners-realtime-mobile-table-body-row-cell__star"
+                    src="./img/winner-in-realtime/star.png"
+                    width="18"
+                    alt="star"
+                  />
+                </td>
+                <td class="winners-realtime-mobile-table-body-row-cell">
+                  הסתיים
+                </td>
+                <td class="winners-realtime-mobile-table-body-row-cell">
+                  <span
+                    class="winners-realtime-mobile-table-body-row-cell__number"
+                    >2.55</span
+                  >
+                </td>
+
+                <td class="winners-realtime-mobile-table-body-row-cell">
+                  <span
+                    class="winners-realtime-mobile-table-body-row-cell__number"
+                    >2.55</span
+                  >
+                </td>
+                <td class="winners-realtime-mobile-table-body-row-cell">
+                  <span
+                    class="winners-realtime-mobile-table-body-row-cell__number"
+                    >2.55</span
+                  >
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <table class="winners-realtime-mobile-table">
+            <thead class="winners-realtime-mobile-table-head">
+              <tr class="winners-realtime-mobile-table-head-row">
+                <td class="winners-realtime-mobile-table-head-row__cell">
+                  כדורגל - ברזיל - גביע ברזילאי
+                  <img src="./img/winner-in-realtime/flag.png" alt="" />
+                </td>
+              </tr>
+            </thead>
+            <tbody class="winners-realtime-mobile-table-body">
+              <tr class="winners-realtime-mobile-table-body-row">
+                <td class="winners-realtime-mobile-table-body-row-cell">
+                  <span
+                    class="winners-realtime-mobile-table-body-row-cell__number-green"
+                    >7.40</span
+                  >
+                </td>
+                <td class="winners-realtime-mobile-table-body-row-cell">S,D</td>
+                <td class="winners-realtime-mobile-table-body-row-cell">
+                  אתלטיקו פלטנסה - טוקומן
+                </td>
+                <td
+                  class="winners-realtime-mobile-table-body-row-cell winners-realtime-mobile-table-body-row-cell-star-wrapper"
+                >
+                  <span>345</span>
+                  <img
+                    class="winners-realtime-mobile-table-body-row-cell__star"
+                    src="./img/winner-in-realtime/star.png"
+                    width="18"
+                    alt="star"
+                  />
+                </td>
+                <td class="winners-realtime-mobile-table-body-row-cell">
+                  הסתיים
+                </td>
+                <td class="winners-realtime-mobile-table-body-row-cell">
+                  <span
+                    class="winners-realtime-mobile-table-body-row-cell__number"
+                    >2.55</span
+                  >
+                </td>
+                <td class="winners-realtime-mobile-table-body-row-cell">
+                  <span
+                    class="winners-realtime-mobile-table-body-row-cell__number"
+                    >2.55</span
+                  >
+                </td>
+                <td class="winners-realtime-mobile-table-body-row-cell">
+                  <span
+                    class="winners-realtime-mobile-table-body-row-cell__number"
+                    >2.55</span
+                  >
+                </td>
+              </tr>
+              <tr class="winners-realtime-mobile-table-body-row">
+                <td class="winners-realtime-mobile-table-body-row-cell">
+                  <span
+                    class="winners-realtime-mobile-table-body-row-cell__number-green"
+                    >7.40</span
+                  >
+                </td>
+                <td class="winners-realtime-mobile-table-body-row-cell">S,D</td>
+                <td class="winners-realtime-mobile-table-body-row-cell">
+                  אתלטיקו פלטנסה - טוקומן
+                </td>
+                <td
+                  style="white-space: nowrap"
+                  class="winners-realtime-mobile-table-body-row-cell winners-realtime-mobile-table-body-row-cell-star-wrapper"
+                >
+                  <span>345</span>
+                  <img
+                    class="winners-realtime-mobile-table-body-row-cell__star"
+                    src="./img/winner-in-realtime/star.png"
+                    width="18"
+                    alt="star"
+                  />
+                </td>
+                <td class="winners-realtime-mobile-table-body-row-cell">
+                  הסתיים
+                </td>
+                <td class="winners-realtime-mobile-table-body-row-cell">
+                  <span
+                    class="winners-realtime-mobile-table-body-row-cell__number"
+                    >2.55</span
+                  >
+                </td>
+                <td class="winners-realtime-mobile-table-body-row-cell">
+                  <span
+                    class="winners-realtime-mobile-table-body-row-cell__number"
+                    >2.55</span
+                  >
+                </td>
+                <td class="winners-realtime-mobile-table-body-row-cell">
+                  <span
+                    class="winners-realtime-mobile-table-body-row-cell__number"
+                    >2.55</span
+                  >
+                </td>
+              </tr>
+              <tr class="winners-realtime-mobile-table-body-row">
+                <td class="winners-realtime-mobile-table-body-row-cell">
+                  <span
+                    class="winners-realtime-mobile-table-body-row-cell__number-green"
+                    >7.40</span
+                  >
+                </td>
+                <td class="winners-realtime-mobile-table-body-row-cell">S,D</td>
+
+                <td class="winners-realtime-mobile-table-body-row-cell">
+                  אתלטיקו פלטנסה - טוקומן
+                </td>
+                <td
+                  class="winners-realtime-mobile-table-body-row-cell winners-realtime-mobile-table-body-row-cell-star-wrapper"
+                >
+                  <span>345</span>
+                  <img
+                    class="winners-realtime-mobile-table-body-row-cell__star"
+                    src="./img/winner-in-realtime/star.png"
+                    width="18"
+                    alt="star"
+                  />
+                </td>
+                <td class="winners-realtime-mobile-table-body-row-cell">
+                  הסתיים
+                </td>
+                <td class="winners-realtime-mobile-table-body-row-cell">
+                  <span
+                    class="winners-realtime-mobile-table-body-row-cell__number"
+                    >2.55</span
+                  >
+                </td>
+
+                <td class="winners-realtime-mobile-table-body-row-cell">
+                  <span
+                    class="winners-realtime-mobile-table-body-row-cell__number"
+                    >2.55</span
+                  >
+                </td>
+                <td class="winners-realtime-mobile-table-body-row-cell">
+                  <span
+                    class="winners-realtime-mobile-table-body-row-cell__number"
+                    >2.55</span
+                  >
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
         <h3 class="winners-realtime-login-msg">
           לקוחות סמארט?
           <a href="#" class="winners-realtime-login-msg__link"
@@ -2796,7 +4608,7 @@
  <section class="wrapper about-wrapper">
   <div class="container">
     <div class="about">
-      <h2 class="about__title">?סמארט– מה עושים פה בעצם</h2>
+      <h1 class="about__title">?סמארט– מה עושים פה בעצם</h1>
       <ul class="about-cards">
         <li class="about-card">
           <img
@@ -2836,6 +4648,56 @@
             ידי כלים סטטיסטיים ויועצי ספורט. גם אם מעולם לא שלחת טוטו וגם אם את
             אלופת ווינר, אנחנו כאן כדי להביא את המזל שלכם לשיאים חדשים!
           </p>
+        </li>
+      </ul>
+    </div>
+    <div class="about-mobile">
+      <h1 class="about-mobile__title about__title">?סמארט– מה עושים פה בעצם</h1>
+      <ul class="about-mobile-cards">
+        <li class="about-mobile-card">
+          <img
+            class="about-mobile-card__img"
+            src="./img/about/about_1.png"
+            alt="about1"
+          />
+          <div class="about-card-info">
+            <h4 class="about-card__title">להתחיל לשחק חכם</h4>
+            <p class="about-card__description">
+              סמארט מבצעת עבור לקוחותיה מילוי ושליחה של משחקי הווינר והטוטו, על
+              ידי כלים סטטיסטיים ויועצי ספורט. גם אם מעולם לא שלחת טוטו וגם אם
+              את אלופת ווינר, אנחנו כאן כדי להביא את המזל שלכם לשיאים חדשים!
+            </p>
+          </div>
+        </li>
+        <li class="about-mobile-card">
+          <img
+            class="about-mobile-card__img"
+            src="./img/about/about_2.png"
+            alt="about2"
+          />
+          <div class="about-card-info">
+            <h4 class="about-card__title">כשמזל ושכל נפגשים</h4>
+            <p class="about-card__description">
+              סמארט מבצעת עבור לקוחותיה מילוי ושליחה של משחקי הווינר והטוטו, על
+              ידי כלים סטטיסטיים ויועצי ספורט. גם אם מעולם לא שלחת טוטו וגם אם
+              את אלופת ווינר, אנחנו כאן כדי להביא את המזל שלכם לשיאים חדשים!
+            </p>
+          </div>
+        </li>
+        <li class="about-mobile-card">
+          <img
+            class="about-mobile-card__img"
+            src="./img/about/about_3.png"
+            alt="about3"
+          />
+          <div class="about-card-info">
+            <h4 class="about-card__title">לנהל את המזל שלך. בקלות</h4>
+            <p class="about-card__description">
+              סמארט מבצעת עבור לקוחותיה מילוי ושליחה של משחקי הווינר והטוטו, על
+              ידי כלים סטטיסטיים ויועצי ספורט. גם אם מעולם לא שלחת טוטו וגם אם
+              את אלופת ווינר, אנחנו כאן כדי להביא את המזל שלכם לשיאים חדשים!
+            </p>
+          </div>
         </li>
       </ul>
     </div>
@@ -2973,7 +4835,7 @@
  <section class="wrapper winner-slider-wrapper">
   <div class="container">
     <div class="winners">
-      <h2 class="winners__section-title">ברכות לזוכי Smart!</h2>
+      <h1 class="winners__section-title">ברכות לזוכי Smart!</h1>
       <p class="winners__section-description">
         הכירו את המשתתפים שהרוויחו מהטכנולוגיה של Smart
       </p>
@@ -3201,7 +5063,7 @@
   <div class="container">
     <div class="join-us-form">
       <div class="join-us-form-info">
-        <h2 class="join-us-form__title">הצטרפו לסמארט ותתחילו לשחק חכם!</h2>
+        <h1 class="join-us-form__title">הצטרפו לסמארט ותתחילו לשחק חכם!</h1>
         <p class="join-us-form__description">
           השאירו פרטים ונחזור אליכם בהקדם:
         </p>
@@ -3244,23 +5106,87 @@
         מימוש ההטבה, לרבות באמצעות מסרון.
       </p>
     </div>
-    <div class="join-us-form-more-buttons">
-      <div class="join-us-form-more-buttons-wrapper">
-        <div class="join-us-form-more-button-wrapper">
-          <a class="join-us-form-more-button__link" href="#">צ'אנס</a>
+    <div class="join-us-form-mobile join-us-form">
+      <div class="join-us-form-mobile-info">
+        <h1 class="join-us-form__title">הצטרפו לסמארט ותתחילו לשחק חכם!</h1>
+        <p class="join-us-form__description">
+          השאירו פרטים ונחזור אליכם בהקדם:
+        </p>
+      </div>
+      <div class="join-us-form-mobile-fields">
+        <div class="join-us-form-mobile-inputs">
+          <input
+            class="join-us-form-mobile-input join-us-form-input"
+            placeholder="טלפון נייד"
+            type="text"
+          />
+          <input
+            class="join-us-form-mobile-input join-us-form-input"
+            placeholder="שם מלא"
+            type="text"
+          />
         </div>
-        <div class="join-us-form-more-button-wrapper">
-          <a class="join-us-form-more-button__link" href="#">צ'אנס</a>
-        </div>
-        <div class="join-us-form-more-button-wrapper">
-          <a class="join-us-form-more-button__link" href="#">צ'אנס</a>
-        </div>
-        <div class="join-us-form-more-button-wrapper">
-          <a class="join-us-form-more-button__link" href="#">צ'אנס</a>
+        <p class="join-us-form-mobile-birthday__text">תאריך לידה:</p>
+        <div class="join-us-form-mobile-selects">
+          <select
+            class="join-us-form-mobile-fields-years join-us-form-select"
+            name="year"
+          >
+            <option value="-1">שנה</option>
+            <option value="1980">1980</option>
+          </select>
+          <select
+            class="join-us-form-mobile-select join-us-form-select"
+            name="month"
+            id=""
+          >
+            <option value="-1">שנה</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+          </select>
+          <select
+            class="join-us-form-mobile-select join-us-form-select"
+            name="day"
+            id=""
+          >
+            <option value="-1">יום</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+          </select>
         </div>
       </div>
-      <h3 class="join-us-form-more-buttons__description">למשחקים נוספים:</h3>
+      <div class="join-us-form-mobile-fields-btn">
+        <img
+          class="join-us-form-mobile-fields-btn-mobile-img"
+          src="./img/join-us/button_submit-mobile.png"
+          alt=""
+        />
+      </div>
+      <p class="join-us-form-mobile__text">
+        *בעצם מילוי ושליחת פרטיי שלעיל אני מאשר לסמארט להעביר לי תזכורת לעניין
+        מימוש ההטבה, לרבות באמצעות מסרון.
+      </p>
     </div>
+    <div class="join-us-form-more-buttons">
+  <div class="join-us-form-more-buttons-wrapper">
+    <div class="join-us-form-more-button-wrapper">
+      <a class="join-us-form-more-button__link" href="#">צ'אנס</a>
+    </div>
+    <div class="join-us-form-more-button-wrapper">
+      <a class="join-us-form-more-button__link" href="#">צ'אנס</a>
+    </div>
+    <div class="join-us-form-more-button-wrapper">
+      <a class="join-us-form-more-button__link" href="#">צ'אנס</a>
+    </div>
+    <div class="join-us-form-more-button-wrapper">
+      <a class="join-us-form-more-button__link" href="#">צ'אנס</a>
+    </div>
+  </div>
+  <h3 class="join-us-form-more-buttons__description">למשחקים נוספים:</h3>
+</div>
+
   </div>
 </form>
 
@@ -3334,6 +5260,177 @@
         </div>
       </div>
     </div>
+    <div class="footer-mobile">
+      <div class="footer-mobile-logo">
+        <img
+          class="footer-mobile-logo__img"
+          src="./img/logos/logo.png"
+          alt=""
+        />
+      </div>
+      <div class="footer-mobile-accordions">
+  <div class="wrapper footer-mobile-accordions-wrapper">
+    <div class="footer-mobile-accordions">
+      <div class="container">
+        <div class="footer-mobile-accordion-wrapper">
+          <div class="footer-mobile-accordion-item">
+            <button class="footer-mobile-accordion-item-btn">אודותינו</button>
+            <div class="footer-mobile-accordion-item-panel">
+              <div class="footer-mobile-accordion-item-panel-content">
+                <div class="footer-mobile-accordion-item-panel-link-wrapper">
+                  <a
+                    class="footer-mobile-accordion-item-panel__link"
+                    href="https://www.playsmart.co.il/%d7%a7%d7%a6%d7%aa-%d7%a2%d7%9c-%d7%a1%d7%9e%d7%90%d7%a8%d7%98/"
+                    >סמארט – מי אנחנו</a
+                  >
+                </div>
+                <div class="footer-mobile-accordion-item-panel-link-wrapper">
+                  <a
+                    class="footer-mobile-accordion-item-panel__link"
+                    href="https://www.playsmart.co.il/%d7%a7%d7%a6%d7%aa-%d7%a2%d7%9c-%d7%a1%d7%9e%d7%90%d7%a8%d7%98/"
+                    >מן העיתונות</a
+                  >
+                </div>
+                <div class="footer-mobile-accordion-item-panel-link-wrapper">
+                  <a class="footer-mobile-accordion-item-panel__link" href="#"
+                    >תרומה לקהילה</a
+                  >
+                </div>
+                <div class="footer-mobile-accordion-item-panel-link-wrapper">
+                  <a class="footer-mobile-accordion-item-panel__link" href="#"
+                    >שיטה ויועצים</a
+                  >
+                </div>
+                <div class="footer-mobile-accordion-item-panel-link-wrapper">
+                  <a class="footer-mobile-accordion-item-panel__link" href="#"
+                    >תקן ISO</a
+                  >
+                </div>
+                <div class="footer-mobile-accordion-item-panel-link-wrapper">
+                  <a class="footer-mobile-accordion-item-panel__link" href="#"
+                    >תו תקן לאיכות בשירות</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-mobile-accordion-item">
+            <button class="footer-mobile-accordion-item-btn">מה זה ו</button>
+            <div class="footer-mobile-accordion-item-panel">
+              <div class="footer-mobile-accordion-item-panel-content">
+                <div class="footer-mobile-accordion-item-panel-link-wrapper">
+                  <a
+                    class="footer-mobile-accordion-item-panel__link"
+                    href="https://www.playsmart.co.il/%d7%a7%d7%a6%d7%aa-%d7%a2%d7%9c-%d7%a1%d7%9e%d7%90%d7%a8%d7%98/"
+                    >שירות לקוחות</a
+                  >
+                </div>
+                <div class="footer-mobile-accordion-item-panel-link-wrapper">
+                  <a
+                    class="footer-mobile-accordion-item-panel__link"
+                    href="https://www.playsmart.co.il/%d7%a7%d7%a6%d7%aa-%d7%a2%d7%9c-%d7%a1%d7%9e%d7%90%d7%a8%d7%98/"
+                    >הסדר פשרה</a
+                  >
+                </div>
+                <div class="footer-mobile-accordion-item-panel-link-wrapper">
+                  <a class="footer-mobile-accordion-item-panel__link" href="#"
+                    >תקנונים</a
+                  >
+                </div>
+                <div class="footer-mobile-accordion-item-panel-link-wrapper">
+                  <a class="footer-mobile-accordion-item-panel__link" href="#"
+                    >צור קשר</a
+                  >
+                </div>
+                <div class="footer-mobile-accordion-item-panel-link-wrapper">
+                  <a class="footer-mobile-accordion-item-panel__link" href="#"
+                    >הקוד האתי של Smart</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-mobile-accordion-item">
+            <button class="footer-mobile-accordion-item-btn">קישורים</button>
+            <div class="footer-mobile-accordion-item-panel">
+              <div class="footer-mobile-accordion-item-panel-content">
+                <div class="footer-mobile-accordion-item-panel-link-wrapper">
+                  <a
+                    class="footer-mobile-accordion-item-panel__link"
+                    href="https://www.playsmart.co.il/%d7%a7%d7%a6%d7%aa-%d7%a2%d7%9c-%d7%a1%d7%9e%d7%90%d7%a8%d7%98/"
+                    >הגרלות נוספות</a
+                  >
+                </div>
+                <div class="footer-mobile-accordion-item-panel-link-wrapper">
+                  <a
+                    class="footer-mobile-accordion-item-panel__link"
+                    href="https://www.playsmart.co.il/%d7%a7%d7%a6%d7%aa-%d7%a2%d7%9c-%d7%a1%d7%9e%d7%90%d7%a8%d7%98/"
+                    >גלישה בטוחה</a
+                  >
+                </div>
+                <div class="footer-mobile-accordion-item-panel-link-wrapper">
+                  <a class="footer-mobile-accordion-item-panel__link" href="#"
+                    >Affiliate program</a
+                  >
+                </div>
+                <div class="footer-mobile-accordion-item-panel-link-wrapper">
+                  <a class="footer-mobile-accordion-item-panel__link" href="#"
+                    >הסדר פשרה</a
+                  >
+                </div>
+                <div class="footer-mobile-accordion-item-panel-link-wrapper">
+                  <a class="footer-mobile-accordion-item-panel__link" href="#"
+                    >תנאי שימוש ומדיניות הפרטיות</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    </div>
+    <div class="footer-mobile-socials">
+      <div class="footer-mobile-social">
+        <a class="footer-mobile-social-link" href="#">
+          <img
+            class="footer-mobile-social-link__img"
+            src="./img/socials/twitter-icon.png"
+            alt=""
+          />
+        </a>
+      </div>
+      <div class="footer-mobile-social">
+        <a class="footer-mobile-social-link" href="#">
+          <img
+            class="footer-mobile-social-link__img"
+            src="./img/socials/facebook-icon.png"
+            alt=""
+          />
+        </a>
+      </div>
+      <div class="footer-mobile-social">
+        <a class="footer-mobile-social-link" href="#">
+          <img
+            class="footer-mobile-social-link__img"
+            src="./img/socials/linkedin-icon.png"
+            alt=""
+          />
+        </a>
+      </div>
+      <div class="footer-mobile-social">
+        <a class="footer-mobile-social-link" href="#">
+          <img
+            class="footer-mobile-social-link__img"
+            src="./img/socials/youtube-icon.png"
+            alt=""
+          />
+        </a>
+      </div>
+    </div>
     <div class="footer-horizontal"></div>
     <div class="footer-widgets">
       <div class="footer-widgets-images">
@@ -3376,6 +5473,38 @@
           <img
             class="footer-widgets-images-link__img"
             src="./img/widgets/18-new.png"
+            alt=""
+          />
+        </a>
+      </div>
+      <p class="footer-widgets-rights">
+        <a class="footer-widgets-rights-link" href="#">ISO 90012015</a>
+        <span class="footer-widgets-rights__highlight"
+          >כל הזכויות שמורות לחברת טוטוקארד 5 בע"מ הפועלת בכפוף לתקן ©</span
+        >
+      </p>
+    </div>
+
+    <div class="footer-widgets-mobile">
+      <div class="footer-widgets-images">
+        <a class="footer-widgets-images-link" href="#">
+          <img
+            class="footer-widgets-images-link__img"
+            src="./img/widgets/visa_new.png"
+            alt=""
+          />
+        </a>
+        <a class="footer-widgets-images-link" href="#">
+          <img
+            class="footer-widgets-images-link__img"
+            src="./img/widgets/master_card_new.png"
+            alt=""
+          />
+        </a>
+        <a class="footer-widgets-images-link" href="#">
+          <img
+            class="footer-widgets-images-link__img"
+            src="./img/widgets/lock_new.png"
             alt=""
           />
         </a>
