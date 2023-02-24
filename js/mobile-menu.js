@@ -25,11 +25,9 @@ if (window.matchMedia("(max-width: 840px)").matches) {
 
             if (popUpMenus[i].style.display === "block") {
                 popUpMenus[i].style.display = "none";
-                document.body.style.overflow = "auto";
                 linksItem[i].classList.remove("header-navigation-item-active");
             } else {
                 popUpMenus[i].style.display = "block";
-                document.body.style.overflow = "hidden";
                 linksItem[i].classList.add("header-navigation-item-active");
             }
         });
@@ -45,7 +43,6 @@ if (window.matchMedia("(max-width: 840px)").matches) {
 
     const closeMenu = (id) => {
         popUpMenus[id].style.display = "none";
-        document.body.style.overflow = "auto";
         linksItem[id].classList.remove("header-navigation-item-active");
     };
 }
