@@ -2211,10 +2211,7 @@ tr {
     border: 1px solid gray;
     outline: none;
     -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
     background-color: white;
-    padding: 0;
     border: 1px solid gray;
     font-size: 16px;
     color: #333;
