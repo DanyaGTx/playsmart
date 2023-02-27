@@ -219,6 +219,14 @@ h6 {
   margin-bottom: 15px;
   border-radius: 3px;
   outline: none;
+  -webkit-appearance: none;
+  background: url("../img/join-us/select-ico.png") no-repeat left center;
+  background-size: 15px;
+  background-position-x: 10px;
+  padding-left: 50px;
+  color: #333;
+  border: 1px solid gray;
+  background-color: white;
 }
 .modal-content-tab-signUp-input-wrapper {
   position: relative;
@@ -377,6 +385,7 @@ h6 {
   .modal-content {
     margin: 0 auto;
     height: 100%;
+    min-height: 800px;
   }
 }
 @media (max-width: 370px) {
@@ -2212,9 +2221,7 @@ tr {
     background-size: 15px;
     background-position-x: 10px;
     padding-left: 50px;
-  }
-  .winners-realtime-filters-mobile-column__datePicker {
-    -webkit-appearance: none;
+    color: #333;
   }
   .winners-realtime-filters-mobile-column-item {
     display: flex;
@@ -2511,6 +2518,22 @@ body {
 
 .swiper-pagination-bullet-active {
   background-color: #9bb061 !important;
+}
+
+input[type=date] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: white;
+  padding: 0;
+  border: 1px solid gray;
+  font-size: 16px;
+  color: #333;
+}
+
+input[type=date]::-webkit-calendar-picker-indicator {
+  color: #ccc;
+  font-size: 14px;
 }
 
 @media (max-width: 420px) {
