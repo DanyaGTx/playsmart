@@ -1602,6 +1602,10 @@ h6 {
     font-size: 1.5em;
   }
 }
+.video-popup-wrapper {
+  position: relative;
+}
+
 .video-popup {
   display: none;
   position: fixed;
@@ -1619,10 +1623,19 @@ h6 {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  margin: 10px;
   width: 100%;
   max-width: 1000px;
   height: 600px;
+  padding: 20px;
+}
+
+.video-popup__close-icon {
+  font-size: 80px;
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+  color: white;
+  margin: 20px;
 }
 
 @media (max-width: 700px) {
@@ -2065,6 +2078,10 @@ tr {
   outline: none;
   direction: rtl;
   font-size: 16px;
+  -webkit-appearance: none;
+  background: url("../img/join-us/select-ico.png") no-repeat left center;
+  background-size: 15px;
+  background-position-x: 10px;
 }
 .winners-realtime-filters-list-row__label {
   display: block;
@@ -2190,6 +2207,14 @@ tr {
     outline: none;
     direction: rtl;
     border: 1px solid gray;
+    -webkit-appearance: none;
+    background: url("../img/join-us/select-ico.png") no-repeat left center;
+    background-size: 15px;
+    background-position-x: 10px;
+    padding-left: 50px;
+  }
+  .winners-realtime-filters-mobile-column__datePicker {
+    -webkit-appearance: none;
   }
   .winners-realtime-filters-mobile-column-item {
     display: flex;
