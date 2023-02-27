@@ -2210,6 +2210,14 @@ tr {
     padding: 3px;
     border: 1px solid gray;
     outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: white;
+    padding: 0;
+    border: 1px solid gray;
+    font-size: 16px;
+    color: #333;
   }
   .winners-realtime-filters-mobile-column-select {
     padding: 5px;
@@ -2518,22 +2526,6 @@ body {
 
 .swiper-pagination-bullet-active {
   background-color: #9bb061 !important;
-}
-
-input[type=date] {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  background-color: white;
-  padding: 0;
-  border: 1px solid gray;
-  font-size: 16px;
-  color: #333;
-}
-
-input[type=date]::-webkit-calendar-picker-indicator {
-  color: #ccc;
-  font-size: 14px;
 }
 
 @media (max-width: 420px) {
