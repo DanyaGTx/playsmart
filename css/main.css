@@ -2215,6 +2215,8 @@ tr {
     border: 1px solid gray;
     font-size: 16px;
     color: #333;
+    border-radius: 0;
+    height: 30px;
   }
   .winners-realtime-filters-mobile-column-select {
     padding: 5px;
