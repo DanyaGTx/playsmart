@@ -882,7 +882,7 @@ h6 {
   max-width: 130px;
 }
 .header__bottom-border-img {
-  background-image: url("../img/header/header-bottom-new.png");
+  background-image: url("../img/header/header-bottom-new.webp");
   height: 7px;
   width: 100%;
   background-size: contain;
@@ -1472,6 +1472,9 @@ h6 {
   .header-navigation-item:hover .header-navigation-item-dropdown {
     display: block;
   }
+  .header-navigation-item-dropdown-content-list {
+    margin: 10px;
+  }
 }
 @media (max-width: 530px) {
   .header-dropdown-content-list-wrapper-columns-winners-images {
@@ -1665,7 +1668,7 @@ h6 {
   }
 }
 .winner-slider-wrapper {
-  background: url("../img/winners-slider/confetti.png");
+  background: url("../img/winners-slider/confetti.webp");
   background-position: 100% 100%;
 }
 
@@ -1723,19 +1726,19 @@ h6 {
   min-height: 230px;
 }
 .winners-card-image-wrapper-circle-yellow {
-  background: url("../img/winners-slider/circle.png") no-repeat;
+  background: url("../img/winners-slider/circle.webp") no-repeat;
   background-size: 220px 230px;
 }
 .winners-card-image-wrapper-circle-pink {
-  background: url("../img/winners-slider/circle2.png") no-repeat;
+  background: url("../img/winners-slider/circle2.webp") no-repeat;
   background-size: 220px 230px;
 }
 .winners-card-image-wrapper-circle-blue {
-  background: url("../img/winners-slider/circle3.png") no-repeat;
+  background: url("../img/winners-slider/circle3.webp") no-repeat;
   background-size: 220px 230px;
 }
 .winners-card-image-wrapper-circle-green {
-  background: url("../img/winners-slider/circle4.png") no-repeat;
+  background: url("../img/winners-slider/circle4.webp") no-repeat;
   background-size: 220px 230px;
 }
 .winners-card__image {
