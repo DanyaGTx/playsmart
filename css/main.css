@@ -1538,6 +1538,9 @@ h6 {
     font-size: 16px;
     line-height: 18px;
   }
+  .header-dropdown-content-list-wrapper-columns-info-results-item {
+    gap: 15px;
+  }
 }
 @media (min-width: 840px) {
   .header-navigation-item:hover .header-navigation-item-dropdown {
@@ -1576,9 +1579,6 @@ h6 {
   }
   .header-navigation-item-dropdown-mobile {
     top: 160%;
-  }
-  .header-dropdown-content-list-wrapper-columns-info-results-item {
-    gap: 15px;
   }
 }
 @media (max-width: 460px) {
