@@ -6,7 +6,7 @@ const winners__slider = new Swiper('.winners-slider', {
   },
   slidesPerView: 5,
   slidesPerGroup: 2,
-  speed: 1000,
+  speed: 500,
   spaceBetween: 10,
 
   breakpoints: {

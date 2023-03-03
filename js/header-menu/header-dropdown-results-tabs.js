@@ -1,6 +1,7 @@
 const mobileDropdownContentResultLinks = document.querySelectorAll('.header-dropdown-content-list-wrapper-links .header-dropdown-content-list-wrapper-info-item-result') 
 const mobileDropdownContentInfoWrapper = document.querySelectorAll('.header-dropdown-content-list-wrapper-columns-info-wrapper-mobile')
-const dropdownContentInfoLinks = document.querySelectorAll('.header-dropdown-content-list-wrapper-columns-info-item-result')
+const dropdownContentInfoItems = document.querySelectorAll('.header-dropdown-content-list-wrapper-columns-info-item-result')
+const dropdownContentInfoLinks = document.querySelectorAll('.header-dropdown-content-list-wrapper-info-columns-item__link')
 const headerDropdownContentInfoWrapper = document.querySelectorAll('.header-dropdown-content-list-wrapper-columns-info-wrapper')
 const mobileDropdownContentLinks = document.querySelectorAll('.header-dropdown-content-list-wrapper-info-item')
 
@@ -55,14 +56,17 @@ else {
   }
 
 
-  dropdownContentInfoLinks.forEach((link, id) => {
+  dropdownContentInfoItems.forEach((link, id) => {
     link.addEventListener('mouseover', (e) => {
       // Hide all info wrappers
       for (let i = 0; i < headerDropdownContentInfoWrapper.length; i++) {
         headerDropdownContentInfoWrapper[i].style.display = 'none'
+        dropdownContentInfoLinks[i].classList.remove('dropdown__link-active')
       }
       // Show the corresponding info wrapper
       headerDropdownContentInfoWrapper[id].style.display = 'block'
+      dropdownContentInfoLinks[id].classList.add('dropdown__link-active')
+
     })
   })
 }

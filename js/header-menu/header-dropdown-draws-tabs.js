@@ -9,6 +9,7 @@ if (window.matchMedia("(max-width: 840px)").matches) {
 
     mobileheaderItemsColumnsDealLinks.forEach((link, id) => {
         link.addEventListener('mouseover', (e) => {
+ 
             for (let i = 0; i < mobileheaderItemsColumnsDeal.length; i++) {
                 mobileheaderItemsColumnsDeal[i].style.display = 'none'
             }

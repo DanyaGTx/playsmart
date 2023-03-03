@@ -425,6 +425,9 @@ h6 {
 .dropdown__link:hover {
   color: #98c80d;
 }
+.dropdown__link-active {
+  color: #98c80d;
+}
 
 .mobile-menu-title {
   background-color: #303536;
@@ -672,8 +675,8 @@ h6 {
   margin-bottom: 30px;
 }
 .header-dropdown-content-list-wrapper-columns-info__title {
-  color: #595a5a;
-  font-size: 22px;
+  color: black;
+  font-size: 16px;
   font-weight: 900;
   margin-bottom: 15px;
 }
@@ -686,6 +689,77 @@ h6 {
   display: flex;
   justify-content: space-evenly;
   margin-top: 50px;
+}
+.header-dropdown-content-list-wrapper-columns-info-results-items {
+  margin-top: 30px;
+}
+.header-dropdown-content-list-wrapper-columns-info-results-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-dropdown-content-list-wrapper-columns-info-results-item:nth-child(even) {
+  background-color: #F6FAFD;
+}
+.header-dropdown-content-list-wrapper-columns-info-results-item__index {
+  background-color: #a1c831;
+  padding: 15px 5px 20px 5px;
+}
+.header-dropdown-content-list-wrapper-columns-info-results-item__score {
+  color: #a1c831;
+}
+.header-dropdown-content-list-wrapper-columns-info-results-item__status-point {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #98c80d;
+  margin-left: 10px;
+}
+.header-dropdown-content-list-wrapper-columns-info-winnerLine {
+  max-width: 570px;
+  margin-left: auto;
+  margin-top: 20px;
+}
+.header-dropdown-content-list-wrapper-columns-info-winnerLine__title {
+  color: #55a3ce;
+}
+.header-dropdown-content-list-wrapper-columns-info-winnerLine-head {
+  display: flex;
+  font-size: 14px;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  border: 1px solid rgba(85, 163, 206, 0.5);
+  padding: 5px;
+}
+.header-dropdown-content-list-wrapper-columns-info-winnerLine-body-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+}
+.header-dropdown-content-list-wrapper-columns-info-winnerLine-body-item:nth-child(even) {
+  background: #F6FAFD;
+}
+.header-dropdown-content-list-wrapper-columns-info-winnerLine-body-item__yellow-point {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background: orange;
+  border-radius: 50%;
+}
+.header-dropdown-content-list-wrapper-columns-info-results-cards {
+  display: flex;
+  justify-content: flex-end;
+  margin: 30px 0 30px 0;
+}
+.header-dropdown-content-list-wrapper-columns-info-results-card {
+  position: relative;
+}
+.header-dropdown-content-list-wrapper-columns-info-results-card-num {
+  position: absolute;
+  top: 70%;
+  left: 35px;
 }
 .header-dropdown-content-list-wrapper-columns-timer__img {
   max-width: 400px;
@@ -893,7 +967,7 @@ h6 {
 }
 
 .header-dropdown-content-list-wrapper-columns-info-wrapper {
-  min-width: 690px;
+  min-width: 700px;
 }
 
 .header-dropdown-content-list-wrapper-columns-deal-lottery {
@@ -1024,9 +1098,6 @@ h6 {
 
 /*---------------------------*/
 @media (max-width: 1360px) {
-  .header-dropdown-content-list-wrapper-columns-info-wrapper {
-    min-width: 0;
-  }
   .header-dropdown-content-list-wrapper-columns-results {
     justify-content: space-around !important;
   }
@@ -1091,10 +1162,11 @@ h6 {
   .header-navigation-item__link:hover {
     padding-bottom: 120px;
   }
-}
-@media (max-width: 1085px) {
   .header-dropdown-content-list-wrapper-columns-deal-lottery-tabs {
     height: 192%;
+  }
+  .header-dropdown-content-list-wrapper-columns-info-wrapper {
+    min-width: 400px;
   }
 }
 @media (max-width: 950px) {
@@ -1337,7 +1409,6 @@ h6 {
     font-size: 16px;
   }
   .header-dropdown-content-list-wrapper-columns-info__text {
-    max-width: 200px;
     font-size: 14px;
   }
   .header-dropdown-content-list-wrapper-columns-info__img {
@@ -1486,7 +1557,7 @@ h6 {
     font-size: 12px;
   }
   .header-navigation-menu::before {
-    top: 90px;
+    top: 88px;
   }
   .header-navigation {
     flex-wrap: nowrap;
@@ -1505,6 +1576,15 @@ h6 {
   }
   .header-navigation-item-dropdown-mobile {
     top: 160%;
+  }
+  .header-dropdown-content-list-wrapper-columns-info-results-item {
+    gap: 15px;
+  }
+}
+@media (max-width: 460px) {
+  .header-dropdown-content-list-wrapper-columns-info-results-card__img {
+    width: 100%;
+    height: 100%;
   }
 }
 @media (max-width: 420px) {
@@ -2140,7 +2220,7 @@ tr {
   flex-wrap: wrap;
   justify-content: flex-end;
   border-bottom: #444 solid 2px;
-  background: #F2F2F2;
+  background: #f2f2f2;
 }
 .winners-realtime-mobile-table-body-row-cell {
   padding: 10px 10px 8px 10px;
@@ -2190,19 +2270,11 @@ tr {
   }
 }
 @media (max-width: 450px) {
-  .winners-realtime-filters-list {
-    margin-top: 10px;
-  }
-  .winners-realtime-filters-list-row {
-    grid-template-columns: 1fr;
-    justify-content: center;
-    grid-row-gap: 35px;
-  }
   .winners-realtime-head-row__cell {
     font-size: 14px;
   }
 }
-@media (max-width: 420px) {
+@media (max-width: 440px) {
   .winners-realtime-filters-list {
     display: none;
   }
@@ -2218,7 +2290,6 @@ tr {
     gap: 5px;
     margin-top: 30px;
     margin-bottom: 20px;
-    flex-wrap: wrap;
   }
   .winners-realtime-filters-mobile-column__datePicker {
     padding: 3px;
@@ -2243,6 +2314,7 @@ tr {
     background-position-x: 10px;
     padding-left: 50px;
     color: #333;
+    width: 100%;
   }
   .winners-realtime-filters-mobile-column-item {
     display: flex;
@@ -2254,8 +2326,8 @@ tr {
     margin-bottom: 10px;
   }
   .winners-realtime-filters-mobile-column-item__restart-btn {
-    padding: 4px;
-    border: 1px solid black;
+    padding: 2px;
+    border: 2px solid black;
   }
 }
 .footer-mobile-accordions {
