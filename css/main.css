@@ -1919,6 +1919,7 @@ h6 {
   background-repeat: no-repeat;
   background-size: 10px;
   background-position: calc(100% - 70px) center;
+  background-color: white;
 }
 .join-us-form__title {
   font-size: 25px;
@@ -2083,15 +2084,7 @@ h6 {
     margin-top: 20px;
   }
 }
-@media (max-width: 450px) {
-  .join-us-form-more-buttons-wrapper {
-    gap: 5px;
-  }
-  .join-us-form-more-button__link {
-    padding: 5px 15px;
-  }
-}
-@media (max-width: 420px) {
+@media (max-width: 480px) {
   .join-us-form-more-buttons {
     display: none;
   }
