@@ -1671,7 +1671,7 @@ h6 {
     font-size: 2.5em;
   }
 }
-@media (max-width: 450px) {
+@media (max-width: 500px) {
   .about__title {
     font-size: 1.8em;
   }
@@ -1680,12 +1680,13 @@ h6 {
     padding: 15px;
   }
 }
-@media (max-width: 420px) {
+@media (max-width: 480px) {
   .about {
     display: none;
   }
   .about-mobile {
     display: block;
+    padding: 10px;
   }
   .about-card__title {
     font-size: 23px;
@@ -2000,7 +2001,7 @@ h6 {
     padding: 10px;
   }
 }
-@media (max-width: 420px) {
+@media (max-width: 480px) {
   .join-us-form {
     display: none;
   }
